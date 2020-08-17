@@ -4,6 +4,8 @@ import org.mafagafogigante.dungeon.io.Version;
 
 import java.io.Serializable;
 
+import pro250.mobiledungeon.java.io.Version;
+
 public class MinimumBoundingRectangle implements Serializable {
 
   private static final long serialVersionUID = Version.MAJOR;

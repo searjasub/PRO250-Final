@@ -10,6 +10,9 @@ import org.mafagafogigante.dungeon.util.CounterMap;
 import java.util.Collection;
 import java.util.Set;
 
+import pro250.mobiledungeon.java.game.Id;
+import pro250.mobiledungeon.java.util.CounterMap;
+
 /**
  * Achievement class.
  */

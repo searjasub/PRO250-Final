@@ -9,6 +9,9 @@ import java.util.Collection;
 import java.util.EnumSet;
 import java.util.Set;
 
+import pro250.mobiledungeon.java.game.Id;
+import pro250.mobiledungeon.java.util.CounterMap;
+
 class AchievementBuilder {
 
   private final Collection<BattleStatisticsRequirement> requirements = new ArrayList<>();

@@ -1,6 +1,6 @@
 package pro250.mobiledungeon.java.game;
 
-import org.mafagafogigante.dungeon.util.Utils;
+import pro250.mobiledungeon.java.util.Utils;
 
 /**
  * Information about an instance of the game.

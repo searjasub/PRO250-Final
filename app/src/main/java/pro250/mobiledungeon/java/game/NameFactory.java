@@ -6,6 +6,8 @@ import com.eclipsesource.json.JsonObject;
 import com.eclipsesource.json.JsonValue;
 import org.jetbrains.annotations.NotNull;
 
+import pro250.mobiledungeon.java.logging.DungeonLogger;
+
 /**
  * A factory of names. Names should be created through this factory.
  */

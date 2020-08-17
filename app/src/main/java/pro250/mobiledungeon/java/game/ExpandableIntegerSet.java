@@ -1,12 +1,12 @@
 package pro250.mobiledungeon.java.game;
 
-import org.mafagafogigante.dungeon.io.Version;
-
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.NavigableSet;
 import java.util.TreeSet;
+
+import pro250.mobiledungeon.java.io.Version;
 
 /**
  * A sorted set of integers that can be expanded from both ends.

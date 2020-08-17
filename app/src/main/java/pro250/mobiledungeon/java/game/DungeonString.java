@@ -1,5 +1,7 @@
 package pro250.mobiledungeon.java.game;
 
+import android.graphics.Color;
+
 import org.mafagafogigante.dungeon.logging.DungeonLogger;
 
 import org.jetbrains.annotations.NotNull;
@@ -8,6 +10,8 @@ import java.awt.Color;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+
+import pro250.mobiledungeon.java.logging.DungeonLogger;
 
 /**
  * The preferred way to represent multicolored text in Dungeon.

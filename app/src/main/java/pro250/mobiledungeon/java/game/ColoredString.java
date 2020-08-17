@@ -1,8 +1,8 @@
 package pro250.mobiledungeon.java.game;
 
-import org.jetbrains.annotations.NotNull;
+import android.graphics.Color;
 
-import java.awt.Color;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * A colored string, this is, a pair of a string and a color.

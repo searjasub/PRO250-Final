@@ -26,6 +26,8 @@ import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
+import pro250.mobiledungeon.java.io.Version;
+
 /**
  * A complete world, with a generator, entity factories, a map, a date, and statistics.
  */

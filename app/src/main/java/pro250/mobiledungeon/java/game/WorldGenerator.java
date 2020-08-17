@@ -7,6 +7,8 @@ import org.jetbrains.annotations.NotNull;
 
 import java.io.Serializable;
 
+import pro250.mobiledungeon.java.io.Version;
+
 /**
  * The world generator. This class should be instantiated by a World object.
  */

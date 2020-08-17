@@ -9,6 +9,8 @@ import org.mafagafogigante.dungeon.util.Selectable;
 
 import org.jetbrains.annotations.NotNull;
 
+import pro250.mobiledungeon.java.util.Selectable;
+
 /**
  * Enumerated type of the parts of the day.
  */

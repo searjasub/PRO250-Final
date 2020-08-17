@@ -5,6 +5,8 @@ import org.mafagafogigante.dungeon.io.Version;
 import java.io.Serializable;
 import java.util.HashMap;
 
+import pro250.mobiledungeon.java.io.Version;
+
 /**
  * The component of WorldGenerator that generates rivers.
  */

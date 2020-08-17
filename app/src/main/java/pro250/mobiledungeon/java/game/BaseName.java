@@ -1,10 +1,10 @@
 package pro250.mobiledungeon.java.game;
 
-import org.mafagafogigante.dungeon.io.Version;
-
 import org.jetbrains.annotations.NotNull;
 
 import java.io.Serializable;
+
+import pro250.mobiledungeon.java.io.Version;
 
 /**
  * BaseName immutable class that stores the singular and plural forms of a name.

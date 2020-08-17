@@ -1,17 +1,15 @@
 package pro250.mobiledungeon.java.game;
 
+import org.apache.commons.lang3.StringUtils;
 import org.mafagafogigante.dungeon.commands.IssuedCommand;
 import org.mafagafogigante.dungeon.commands.IssuedCommandEvaluation;
 import org.mafagafogigante.dungeon.commands.IssuedCommandProcessor;
-import org.mafagafogigante.dungeon.gui.GameWindow;
 import org.mafagafogigante.dungeon.io.Loader;
 import org.mafagafogigante.dungeon.io.Version;
 import org.mafagafogigante.dungeon.io.Writer;
 import org.mafagafogigante.dungeon.logging.DungeonLogger;
 import org.mafagafogigante.dungeon.util.StopWatch;
 import org.mafagafogigante.dungeon.util.Utils;
-
-import org.apache.commons.lang3.StringUtils;
 
 import java.awt.Color;
 import java.lang.reflect.InvocationTargetException;
@@ -21,13 +19,14 @@ import java.util.List;
 import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
 
+import pro250.mobiledungeon.java.gui.GameWindow;
+
 public class Game {
 
   private static final InstanceInformation instanceInformation = new InstanceInformation();
 
   private static GameWindow gameWindow;
   private static GameState gameState;
-
   /**
    * The main method.
    */

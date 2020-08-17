@@ -1,5 +1,6 @@
 package pro250.mobiledungeon.java.game;
 
+import org.jetbrains.annotations.NotNull;
 import org.mafagafogigante.dungeon.entity.Entity;
 import org.mafagafogigante.dungeon.entity.Luminosity;
 import org.mafagafogigante.dungeon.entity.TagSet;
@@ -10,12 +11,15 @@ import org.mafagafogigante.dungeon.entity.items.LocationInventory;
 import org.mafagafogigante.dungeon.io.Version;
 import org.mafagafogigante.dungeon.util.Percentage;
 
-import org.jetbrains.annotations.NotNull;
-
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map.Entry;
+
+import pro250.mobiledungeon.java.entity.TagSet;
+import pro250.mobiledungeon.java.entity.creatures.Creature;
+import pro250.mobiledungeon.java.entity.items.ItemFactory;
+import pro250.mobiledungeon.java.io.Version;
 
 /**
  * The Location class that defines a Location of a World.

@@ -1,8 +1,8 @@
 package pro250.mobiledungeon.java.game;
 
-import org.mafagafogigante.dungeon.logging.DungeonLogger;
-
 import java.util.Locale;
+
+import pro250.mobiledungeon.java.logging.DungeonLogger;
 
 public abstract class Name {
 

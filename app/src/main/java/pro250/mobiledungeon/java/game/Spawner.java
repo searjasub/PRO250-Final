@@ -6,6 +6,8 @@ import org.mafagafogigante.dungeon.logging.DungeonLogger;
 
 import java.io.Serializable;
 
+import pro250.mobiledungeon.java.io.Version;
+
 /**
  * Spawner class that repopulates locations.
  */

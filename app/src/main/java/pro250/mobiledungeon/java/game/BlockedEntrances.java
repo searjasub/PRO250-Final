@@ -9,6 +9,8 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
+import pro250.mobiledungeon.java.io.Version;
+
 /**
  * BlockedEntrances class that defines a allows blocking the entrances of a Locations.
  */

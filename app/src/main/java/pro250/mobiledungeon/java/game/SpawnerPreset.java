@@ -1,6 +1,6 @@
 package pro250.mobiledungeon.java.game;
 
-import org.mafagafogigante.dungeon.date.DungeonTimeUnit;
+import pro250.mobiledungeon.java.date.DungeonTimeUnit;
 
 class SpawnerPreset {
 

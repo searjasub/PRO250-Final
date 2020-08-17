@@ -1,8 +1,8 @@
 package pro250.mobiledungeon.java.game;
 
-import org.mafagafogigante.dungeon.io.Version;
-
 import java.io.Serializable;
+
+import pro250.mobiledungeon.java.io.Version;
 
 /**
  * Id class that wraps an identification String.
