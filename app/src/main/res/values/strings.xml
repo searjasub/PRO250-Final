@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MobileDungeon</string>
+    <string name="title_activity_main2">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Mobile Dungeon</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="user">USER</string>
+    <string name="tutorial">The Game Dungeon is a text-based, turn-based, open-world role-playing game. The World You are in control of a character and completely free to explore the world in which you start. This world is a tridimensional matrix of locations that vary from arid deserts to warm and moist swamps. Different foes lurk the land but will not attack you unless you harm them, what allows you to explore the world freely while searching for items. On the ground, you will find a wide variety of items, from small edible fruits to fearsome weapons and tomes about magical spells. Collecting these items and using them in the appropriate occasions is the difference between conquering this world and dying to a rat. The Character The character is a human who woke up one day without remembering anything about what happened. He finds himself in a strange place and surrounded by various different creatures. While some of these creatures are familiar to him, there are monsters he has never seen before. First steps You can issue \'commands\' at any time to see a complete list of available commands. The \'pick\' command is used to grab something from the ground. Use \'items\' to see what your character is carrying and \'eat\' and \'equip\' to manipulate the items in your inventory. Don\'t want something anymore? Just \'drop\' it. In order to walk to a given direction, issue \'go\' followed by the direction towards which you want to move the character. e.g., \'go north\'. Alternatively, use only the first character of the direction, as in \'go s\'. To issue your character to attempt to kill a creature use \'kill\' followed by part of the name of the creature. In order to regain your lost hit points you can eat, rest or sleep. Only eating and sleeping will heal you up to your full health. The character can only sleep when it is dark. The wiki is a quite useful resource. Simply use the \'wiki\' command followed by whatever you want to search. The Project Dungeon is made with Java (SE 6) and released under the GNU General Public License v3.0.e</string>
+
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/location"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Locations" />
+        <item
+            android:id="@+id/items"
+            android:icon="@drawable/ic_items"
+            android:title="Items" />
+        <item
+            android:id="@+id/tutorial"
+            android:icon="@drawable/ic_baseline_help_24"
+            android:title="Tutorial" />
+        <item
+            android:id="@+id/achievements"
+            android:icon="@drawable/ic_achievements"
+            android:title="Achievements" />
+    </group>
+</menu>
