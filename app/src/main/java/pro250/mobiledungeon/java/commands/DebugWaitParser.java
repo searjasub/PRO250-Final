@@ -1,5 +1,7 @@
 package pro250.mobiledungeon.java.commands;
 
+import android.graphics.Color;
+
 import org.apache.commons.lang3.StringUtils;
 import org.jetbrains.annotations.NotNull;
 //import org.mafagafogigante.dungeon.date.DungeonTimeParser;
@@ -11,7 +13,7 @@ import org.jetbrains.annotations.NotNull;
 //import org.mafagafogigante.dungeon.util.Matches;
 //import org.mafagafogigante.dungeon.util.Messenger;
 
-import java.awt.Color;
+//import android.graphics.Color;
 import java.util.Arrays;
 
 import pro250.mobiledungeon.java.game.DungeonString;
@@ -58,12 +60,12 @@ class DebugWaitParser {
   private static void writeDebugWaitSyntax() {
     DungeonString string = new DungeonString();
     string.append("Usage: wait ");
-    final Color highlightColor = Color.ORANGE;
-    string.setColor(highlightColor);
+    //final Color highlightColor = new Color();
+    //string.setColor(highlightColor);
     string.append("for");
     string.resetColor();
     string.append(" [amount of time] or wait ");
-    string.setColor(highlightColor);
+    //string.setColor(highlightColor);
     string.append("until next");
     string.resetColor();
     string.append(" [part of the day].");
