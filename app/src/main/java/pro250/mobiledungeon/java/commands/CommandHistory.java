@@ -1,12 +1,15 @@
 package pro250.mobiledungeon.java.commands;
 
-import org.mafagafogigante.dungeon.io.Version;
-import org.mafagafogigante.dungeon.util.CircularList;
+//import org.mafagafogigante.dungeon.io.Version;
+//import org.mafagafogigante.dungeon.util.CircularList;
 
 import org.apache.commons.lang3.StringUtils;
 import org.jetbrains.annotations.Nullable;
 
 import java.io.Serializable;
+
+import pro250.mobiledungeon.java.io.Version;
+import pro250.mobiledungeon.java.util.CircularList;
 
 /**
  * CommandHistory class that is used to keep track of all the commands issued by the player.

@@ -1,20 +1,29 @@
 package pro250.mobiledungeon.java.commands;
 
-import org.mafagafogigante.dungeon.date.DungeonTimeParser;
-import org.mafagafogigante.dungeon.date.Duration;
-import org.mafagafogigante.dungeon.game.DungeonString;
-import org.mafagafogigante.dungeon.game.Engine;
-import org.mafagafogigante.dungeon.game.Game;
-import org.mafagafogigante.dungeon.game.PartOfDay;
-import org.mafagafogigante.dungeon.io.Writer;
-import org.mafagafogigante.dungeon.util.Matches;
-import org.mafagafogigante.dungeon.util.Messenger;
-
 import org.apache.commons.lang3.StringUtils;
 import org.jetbrains.annotations.NotNull;
+//import org.mafagafogigante.dungeon.date.DungeonTimeParser;
+//import org.mafagafogigante.dungeon.date.Duration;
+//import org.mafagafogigante.dungeon.game.Engine;
+//import org.mafagafogigante.dungeon.game.Game;
+//import org.mafagafogigante.dungeon.game.PartOfDay;
+//import org.mafagafogigante.dungeon.io.Writer;
+//import org.mafagafogigante.dungeon.util.Matches;
+//import org.mafagafogigante.dungeon.util.Messenger;
 
 import java.awt.Color;
 import java.util.Arrays;
+
+import pro250.mobiledungeon.java.game.DungeonString;
+import pro250.mobiledungeon.java.date.DungeonTimeParser;
+import pro250.mobiledungeon.java.date.Duration;
+import pro250.mobiledungeon.java.game.Engine;
+import pro250.mobiledungeon.java.game.Game;
+import pro250.mobiledungeon.java.game.PartOfDay;
+import pro250.mobiledungeon.java.io.Writer;
+import pro250.mobiledungeon.java.util.Matches;
+import pro250.mobiledungeon.java.util.Messenger;
+
 
 /**
  * The parser of the debugging Wait command.

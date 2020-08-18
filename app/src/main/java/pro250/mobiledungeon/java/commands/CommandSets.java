@@ -1,14 +1,22 @@
 package pro250.mobiledungeon.java.commands;
 
+import org.apache.commons.lang3.StringUtils;
+import org.jetbrains.annotations.NotNull;
+import pro250.mobiledungeon.java.achievements.*;
 import org.mafagafogigante.dungeon.achievements.Achievement;
 import org.mafagafogigante.dungeon.achievements.AchievementStoreFactory;
 import org.mafagafogigante.dungeon.achievements.AchievementTracker;
-import org.mafagafogigante.dungeon.achievements.AchievementTrackerWriter;
+import pro250.mobiledungeon.java.date.Date;
 import org.mafagafogigante.dungeon.date.Date;
+import pro250.mobiledungeon.java.entity.creatures.Creature;
 import org.mafagafogigante.dungeon.entity.creatures.Creature;
+import pro250.mobiledungeon.java.entity.creatures.*;
 import org.mafagafogigante.dungeon.entity.creatures.Hero;
+import pro250.mobiledungeon.java.entity.items.CreatureInventory.SimulationResult;
 import org.mafagafogigante.dungeon.entity.items.CreatureInventory.SimulationResult;
+import pro250.mobiledungeon.java.entity.items.Item;
 import org.mafagafogigante.dungeon.entity.items.Item;
+import pro250.mobiledungeon.java.game.*;
 import org.mafagafogigante.dungeon.game.DungeonString;
 import org.mafagafogigante.dungeon.game.Engine;
 import org.mafagafogigante.dungeon.game.Game;
@@ -20,15 +28,20 @@ import org.mafagafogigante.dungeon.game.LocationPresetStore;
 import org.mafagafogigante.dungeon.game.Point;
 import org.mafagafogigante.dungeon.game.Random;
 import org.mafagafogigante.dungeon.game.World;
+import pro250.mobiledungeon.java.gui.WritingSpecifications;
 import org.mafagafogigante.dungeon.gui.WritingSpecifications;
+import pro250.mobiledungeon.java.io.*;
 import org.mafagafogigante.dungeon.io.Loader;
 import org.mafagafogigante.dungeon.io.PoemWriter;
 import org.mafagafogigante.dungeon.io.SavesTableWriter;
 import org.mafagafogigante.dungeon.io.Version;
 import org.mafagafogigante.dungeon.io.Writer;
+import pro250.mobiledungeon.java.map.*;
 import org.mafagafogigante.dungeon.map.WorldMapWriter;
+import pro250.mobiledungeon.java.stats.*;
 import org.mafagafogigante.dungeon.stats.CauseOfDeath;
 import org.mafagafogigante.dungeon.stats.ExplorationStatistics;
+import pro250.mobiledungeon.java.util.*;
 import org.mafagafogigante.dungeon.util.ColumnAlignment;
 import org.mafagafogigante.dungeon.util.CounterMap;
 import org.mafagafogigante.dungeon.util.Messenger;
@@ -36,10 +49,8 @@ import org.mafagafogigante.dungeon.util.SystemInformation;
 import org.mafagafogigante.dungeon.util.Table;
 import org.mafagafogigante.dungeon.util.Tutorial;
 import org.mafagafogigante.dungeon.util.library.Libraries;
+import pro250.mobiledungeon.java.wiki.*;
 import org.mafagafogigante.dungeon.wiki.WikiSearcher;
-
-import org.apache.commons.lang3.StringUtils;
-import org.jetbrains.annotations.NotNull;
 
 import java.awt.Color;
 import java.util.ArrayList;
@@ -50,6 +61,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
+
+import pro250.mobiledungeon.java.achievements.AchievementTrackerWriter;
 
 final class CommandSets {
 
