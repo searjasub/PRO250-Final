@@ -1,7 +1,7 @@
 package pro250.mobiledungeon.java.io;
 
-import org.mafagafogigante.dungeon.entity.TagSet;
-import org.mafagafogigante.dungeon.entity.TagSet.InvalidTagException;
+import pro250.mobiledungeon.java.entity.TagSet;
+import pro250.mobiledungeon.java.entity.TagSet.InvalidTagException;
 
 import com.eclipsesource.json.JsonValue;
 

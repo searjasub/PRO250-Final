@@ -2,7 +2,7 @@ package pro250.mobiledungeon.java.game;
 
 import android.graphics.Color;
 
-import org.mafagafogigante.dungeon.logging.DungeonLogger;
+import pro250.mobiledungeon.java.logging.DungeonLogger;
 
 import org.jetbrains.annotations.NotNull;
 

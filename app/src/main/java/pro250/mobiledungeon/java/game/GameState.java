@@ -1,12 +1,12 @@
 package pro250.mobiledungeon.java.game;
 
-import org.mafagafogigante.dungeon.commands.CommandHistory;
-import org.mafagafogigante.dungeon.entity.creatures.Hero;
-import org.mafagafogigante.dungeon.io.DungeonResource;
-import org.mafagafogigante.dungeon.io.JsonObjectFactory;
-import org.mafagafogigante.dungeon.io.ResourceNameResolver;
-import org.mafagafogigante.dungeon.io.Version;
-import org.mafagafogigante.dungeon.stats.Statistics;
+import pro250.mobiledungeon.java.commands.CommandHistory;
+import pro250.mobiledungeon.java.entity.creatures.Hero;
+import pro250.mobiledungeon.java.io.DungeonResource;
+import pro250.mobiledungeon.java.io.JsonObjectFactory;
+import pro250.mobiledungeon.java.io.ResourceNameResolver;
+import pro250.mobiledungeon.java.io.Version;
+import pro250.mobiledungeon.java.stats.Statistics;
 
 import java.io.Serializable;
 

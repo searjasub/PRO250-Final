@@ -1,8 +1,8 @@
 package pro250.mobiledungeon.java.game;
 
-import org.mafagafogigante.dungeon.entity.creatures.Creature;
-import org.mafagafogigante.dungeon.io.Version;
-import org.mafagafogigante.dungeon.logging.DungeonLogger;
+import pro250.mobiledungeon.java.entity.creatures.Creature;
+import pro250.mobiledungeon.java.io.Version;
+import pro250.mobiledungeon.java.logging.DungeonLogger;
 
 import java.io.Serializable;
 

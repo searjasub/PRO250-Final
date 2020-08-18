@@ -1,7 +1,7 @@
 package pro250.mobiledungeon.java.game;
 
-import org.mafagafogigante.dungeon.game.LocationPreset.Type;
-import org.mafagafogigante.dungeon.io.Version;
+import pro250.mobiledungeon.java.game.LocationPreset.Type;
+import pro250.mobiledungeon.java.io.Version;
 
 import org.jetbrains.annotations.NotNull;
 

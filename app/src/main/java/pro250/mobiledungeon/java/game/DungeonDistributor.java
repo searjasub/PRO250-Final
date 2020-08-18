@@ -1,7 +1,7 @@
 package pro250.mobiledungeon.java.game;
 
-import org.mafagafogigante.dungeon.io.Version;
-import org.mafagafogigante.dungeon.util.Percentage;
+import pro250.mobiledungeon.java.io.Version;
+import pro250.mobiledungeon.java.util.Percentage;
 
 import java.io.Serializable;
 import java.util.ArrayList;

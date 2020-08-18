@@ -1,9 +1,9 @@
 package pro250.mobiledungeon.java.game;
 
-import org.mafagafogigante.dungeon.game.LocationPreset.Type;
-import org.mafagafogigante.dungeon.io.Version;
-import org.mafagafogigante.dungeon.logging.DungeonLogger;
-import org.mafagafogigante.dungeon.util.Percentage;
+import pro250.mobiledungeon.java.game.LocationPreset.Type;
+import pro250.mobiledungeon.java.io.Version;
+import pro250.mobiledungeon.java.logging.DungeonLogger;
+import pro250.mobiledungeon.java.util.Percentage;
 
 import org.jetbrains.annotations.NotNull;
 
