@@ -9,10 +9,12 @@ import org.mafagafogigante.dungeon.util.Selectable;
 
 import org.jetbrains.annotations.NotNull;
 
+import pro250.mobiledungeon.java.util.Selectable;
+
 /**
  * Enumerated type of the parts of the day.
  */
-public enum PartOfDay implements Selectable {
+public enum PartOfDay implements Selectable, Selectable {
 
   // Keep this array sorted by the startingHour in ascending order. See getCorrespondingConstant to understand why.
   NIGHT("Night", 0.4, 1),

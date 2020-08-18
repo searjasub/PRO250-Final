@@ -1,9 +1,10 @@
 package pro250.mobiledungeon.java.commands;
 
-import org.mafagafogigante.dungeon.game.DungeonString;
-import org.mafagafogigante.dungeon.io.Writer;
+//import org.mafagafogigante.dungeon.game.DungeonString;
+//import org.mafagafogigante.dungeon.io.Writer;
 
 import org.apache.commons.lang3.StringUtils;
+import StringUtils.*;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
@@ -11,6 +12,9 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 import java.util.TreeMap;
+
+import pro250.mobiledungeon.java.game.DungeonString;
+import pro250.mobiledungeon.java.io.Writer;
 
 /**
  * A set of Commands.

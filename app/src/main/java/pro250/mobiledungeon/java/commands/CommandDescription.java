@@ -1,10 +1,10 @@
 package pro250.mobiledungeon.java.commands;
 
-import org.mafagafogigante.dungeon.logging.DungeonLogger;
-
 import org.jetbrains.annotations.NotNull;
 
 import java.util.Locale;
+
+import pro250.mobiledungeon.java.logging.DungeonLogger;
 
 /**
  * Simple wrapper for a name and info of a Command.
