@@ -1,12 +1,12 @@
 package pro250.mobiledungeon.java.achievements;
 
-import org.mafagafogigante.dungeon.date.Date;
-import org.mafagafogigante.dungeon.game.DungeonString;
-import org.mafagafogigante.dungeon.game.Id;
-import org.mafagafogigante.dungeon.io.Version;
-import org.mafagafogigante.dungeon.io.Writer;
-import org.mafagafogigante.dungeon.logging.DungeonLogger;
-import org.mafagafogigante.dungeon.stats.Statistics;
+import pro250.mobiledungeon.java.date.Date;
+import pro250.mobiledungeon.java.game.DungeonString;
+import pro250.mobiledungeon.java.game.Id;
+import pro250.mobiledungeon.java.io.Version;
+import pro250.mobiledungeon.java.io.Writer;
+import pro250.mobiledungeon.java.logging.DungeonLogger;
+import pro250.mobiledungeon.java.stats.Statistics;
 
 import org.jetbrains.annotations.NotNull;
 

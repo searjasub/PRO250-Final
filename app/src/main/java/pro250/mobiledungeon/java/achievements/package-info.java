@@ -5,4 +5,4 @@
  * that contains a variable number of unlocked achievements.
  */
 
-package org.mafagafogigante.dungeon.achievements;
+package pro250.mobiledungeon.java.achievements;

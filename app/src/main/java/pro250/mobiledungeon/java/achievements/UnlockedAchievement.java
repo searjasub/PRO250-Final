@@ -1,7 +1,7 @@
 package pro250.mobiledungeon.java.achievements;
 
-import org.mafagafogigante.dungeon.date.Date;
-import org.mafagafogigante.dungeon.io.Version;
+import pro250.mobiledungeon.java.date.Date;
+import pro250.mobiledungeon.java.io.Version;
 
 import java.io.Serializable;
 

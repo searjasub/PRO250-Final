@@ -1,8 +1,8 @@
 package pro250.mobiledungeon.java.achievements;
 
-import org.mafagafogigante.dungeon.game.Id;
-import org.mafagafogigante.dungeon.game.PartOfDay;
-import org.mafagafogigante.dungeon.util.CounterMap;
+import pro250.mobiledungeon.java.game.Id;
+import pro250.mobiledungeon.java.game.PartOfDay;
+import pro250.mobiledungeon.java.util.CounterMap;
 
 import java.util.ArrayList;
 import java.util.Collection;
