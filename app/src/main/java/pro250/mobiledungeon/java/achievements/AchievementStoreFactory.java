@@ -1,14 +1,14 @@
 package pro250.mobiledungeon.java.achievements;
 
-import org.mafagafogigante.dungeon.game.Id;
-import org.mafagafogigante.dungeon.game.PartOfDay;
-import org.mafagafogigante.dungeon.io.DungeonResource;
-import org.mafagafogigante.dungeon.io.JsonObjectFactory;
-import org.mafagafogigante.dungeon.io.ResourceNameResolver;
-import org.mafagafogigante.dungeon.logging.DungeonLogger;
-import org.mafagafogigante.dungeon.stats.CauseOfDeath;
-import org.mafagafogigante.dungeon.stats.TypeOfCauseOfDeath;
-import org.mafagafogigante.dungeon.util.CounterMap;
+import pro250.mobiledungeon.java.game.Id;
+import pro250.mobiledungeon.java.game.PartOfDay;
+import pro250.mobiledungeon.java.io.DungeonResource;
+import pro250.mobiledungeon.java.io.JsonObjectFactory;
+import pro250.mobiledungeon.java.io.ResourceNameResolver;
+import pro250.mobiledungeon.java.logging.DungeonLogger;
+import pro250.mobiledungeon.java.stats.CauseOfDeath;
+import pro250.mobiledungeon.java.stats.TypeOfCauseOfDeath;
+import pro250.mobiledungeon.java.util.CounterMap;
 
 import com.eclipsesource.json.JsonObject;
 import com.eclipsesource.json.JsonObject.Member;

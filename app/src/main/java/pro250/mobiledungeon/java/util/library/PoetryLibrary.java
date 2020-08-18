@@ -1,9 +1,9 @@
 package pro250.mobiledungeon.java.util.library;
 
-import org.mafagafogigante.dungeon.io.DungeonResource;
-import org.mafagafogigante.dungeon.io.JsonObjectFactory;
-import org.mafagafogigante.dungeon.io.ResourceNameResolver;
-import org.mafagafogigante.dungeon.logging.DungeonLogger;
+import pro250.mobiledungeon.java.io.DungeonResource;
+import pro250.mobiledungeon.java.io.JsonObjectFactory;
+import pro250.mobiledungeon.java.io.ResourceNameResolver;
+import pro250.mobiledungeon.java.logging.DungeonLogger;
 
 import com.eclipsesource.json.JsonObject;
 import com.eclipsesource.json.JsonValue;

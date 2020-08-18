@@ -1,11 +1,11 @@
 package pro250.mobiledungeon.java.game;
 
-import org.mafagafogigante.dungeon.game.LocationPreset.Type;
-import org.mafagafogigante.dungeon.io.DungeonResource;
-import org.mafagafogigante.dungeon.io.JsonObjectFactory;
-import org.mafagafogigante.dungeon.io.ResourceNameResolver;
-import org.mafagafogigante.dungeon.io.TagSetParser;
-import org.mafagafogigante.dungeon.logging.DungeonLogger;
+import pro250.mobiledungeon.java.game.LocationPreset.Type;
+import pro250.mobiledungeon.java.io.DungeonResource;
+import pro250.mobiledungeon.java.io.JsonObjectFactory;
+import pro250.mobiledungeon.java.io.ResourceNameResolver;
+import pro250.mobiledungeon.java.io.TagSetParser;
+import pro250.mobiledungeon.java.logging.DungeonLogger;
 
 import com.eclipsesource.json.JsonArray;
 import com.eclipsesource.json.JsonObject;

@@ -1,9 +1,9 @@
 package pro250.mobiledungeon.java.io;
 
-import org.mafagafogigante.dungeon.game.DungeonString;
-import org.mafagafogigante.dungeon.game.Game;
-import org.mafagafogigante.dungeon.game.Writable;
-import org.mafagafogigante.dungeon.gui.WritingSpecifications;
+import pro250.mobiledungeon.java.game.DungeonString;
+import pro250.mobiledungeon.java.game.Writable;
+import pro250.mobiledungeon.java.game.Game;
+import pro250.mobiledungeon.java.gui.WritingSpecifications;
 
 /**
  * Writer class that encapsulates all Input/Output operations. This is the only class that should call the writing

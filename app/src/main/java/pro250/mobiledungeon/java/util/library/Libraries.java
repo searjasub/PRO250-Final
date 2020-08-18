@@ -1,7 +1,7 @@
 package pro250.mobiledungeon.java.util.library;
 
-import org.mafagafogigante.dungeon.io.DungeonResource;
-import org.mafagafogigante.dungeon.io.ResourceNameResolver;
+import pro250.mobiledungeon.java.io.DungeonResource;
+import pro250.mobiledungeon.java.io.ResourceNameResolver;
 
 public final class Libraries {
 

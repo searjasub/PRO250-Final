@@ -1,6 +1,6 @@
 package pro250.mobiledungeon.java.util;
 
-import org.mafagafogigante.dungeon.logging.DungeonLogger;
+import pro250.mobiledungeon.java.logging.DungeonLogger;
 
 import java.util.EnumMap;
 import java.util.Map;

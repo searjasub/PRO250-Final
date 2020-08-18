@@ -1,6 +1,6 @@
 package pro250.mobiledungeon.java.util;
 
-import org.mafagafogigante.dungeon.io.Writer;
+import pro250.mobiledungeon.java.io.Writer;
 
 /**
  * Messenger helper class that defines several static methods to print uniform warning messages.

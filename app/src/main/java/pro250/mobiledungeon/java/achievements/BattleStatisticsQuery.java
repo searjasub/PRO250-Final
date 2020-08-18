@@ -1,9 +1,9 @@
 package pro250.mobiledungeon.java.achievements;
 
-import org.mafagafogigante.dungeon.game.Id;
-import org.mafagafogigante.dungeon.game.PartOfDay;
-import org.mafagafogigante.dungeon.stats.BattleRecord;
-import org.mafagafogigante.dungeon.stats.CauseOfDeath;
+import pro250.mobiledungeon.java.game.Id;
+import pro250.mobiledungeon.java.game.PartOfDay;
+import pro250.mobiledungeon.java.stats.BattleRecord;
+import pro250.mobiledungeon.java.stats.CauseOfDeath;
 
 import org.jetbrains.annotations.NotNull;
 

@@ -1,6 +1,8 @@
 package pro250.mobiledungeon.java.util.library;
 
-import org.mafagafogigante.dungeon.util.ShuffledRange;
+import pro250.mobiledungeon.java.util.ShuffledRange;
+
+import pro250.mobiledungeon.java.util.ShuffledRange;
 
 /**
  * An automated ShuffledRange.

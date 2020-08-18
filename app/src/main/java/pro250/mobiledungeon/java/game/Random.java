@@ -1,6 +1,6 @@
 package pro250.mobiledungeon.java.game;
 
-import org.mafagafogigante.dungeon.util.Percentage;
+import pro250.mobiledungeon.java.util.Percentage;
 
 import org.jetbrains.annotations.NotNull;
 

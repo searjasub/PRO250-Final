@@ -1,13 +1,20 @@
 package pro250.mobiledungeon.java.game;
 
-import org.mafagafogigante.dungeon.achievements.AchievementStoreFactory;
-import org.mafagafogigante.dungeon.date.Date;
-import org.mafagafogigante.dungeon.entity.creatures.Creature;
-import org.mafagafogigante.dungeon.entity.creatures.Hero;
-import org.mafagafogigante.dungeon.io.Writer;
-import org.mafagafogigante.dungeon.util.Utils;
+import android.graphics.Color;
+
+import pro250.mobiledungeon.java.achievements.AchievementStoreFactory;
+import pro250.mobiledungeon.java.date.Date;
+import pro250.mobiledungeon.java.entity.creatures.Creature;
+import pro250.mobiledungeon.java.entity.creatures.Hero;
+import pro250.mobiledungeon.java.io.Writer;
+import pro250.mobiledungeon.java.util.Utils;
 
 import java.awt.Color;
+
+import pro250.mobiledungeon.java.date.Date;
+import pro250.mobiledungeon.java.entity.creatures.Creature;
+import pro250.mobiledungeon.java.entity.creatures.Hero;
+import pro250.mobiledungeon.java.io.Writer;
 
 /**
  * Engine class that contains most static methods that need to be called to alter the loaded GameState.

@@ -1,6 +1,6 @@
 package pro250.mobiledungeon.java.io;
 
-import org.mafagafogigante.dungeon.logging.DungeonLogger;
+import pro250.mobiledungeon.java.logging.DungeonLogger;
 
 import org.apache.commons.lang3.StringUtils;
 import org.jetbrains.annotations.NotNull;
@@ -9,6 +9,8 @@ import java.io.IOException;
 import java.io.Reader;
 import java.io.Serializable;
 import java.util.Properties;
+
+import pro250.mobiledungeon.java.logging.DungeonLogger;
 
 public class Version implements Comparable<Version>, Serializable {
 

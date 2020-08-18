@@ -1,11 +1,11 @@
 package pro250.mobiledungeon.java.achievements;
 
-import org.mafagafogigante.dungeon.achievements.comparators.UnlockedAchievementComparators;
-import org.mafagafogigante.dungeon.date.Date;
-import org.mafagafogigante.dungeon.date.Duration;
-import org.mafagafogigante.dungeon.game.DungeonString;
-import org.mafagafogigante.dungeon.game.Game;
-import org.mafagafogigante.dungeon.io.Writer;
+import pro250.mobiledungeon.java.achievements.comparators.UnlockedAchievementComparators;
+import pro250.mobiledungeon.java.date.Date;
+import pro250.mobiledungeon.java.date.Duration;
+import pro250.mobiledungeon.java.game.DungeonString;
+import pro250.mobiledungeon.java.game.Game;
+import pro250.mobiledungeon.java.io.Writer;
 
 import java.awt.Color;
 import java.util.Comparator;

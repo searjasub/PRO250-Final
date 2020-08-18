@@ -1,11 +1,11 @@
 package pro250.mobiledungeon.java.game;
 
-import org.mafagafogigante.dungeon.io.Version;
-
 import org.apache.commons.lang3.StringUtils;
 
 import java.io.Serializable;
 import java.util.List;
+
+import pro250.mobiledungeon.java.io.Version;
 
 public class QualifiedName extends Name implements Serializable {
 

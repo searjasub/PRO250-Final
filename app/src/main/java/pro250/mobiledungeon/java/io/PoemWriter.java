@@ -1,8 +1,10 @@
 package pro250.mobiledungeon.java.io;
 
-import org.mafagafogigante.dungeon.gui.WritingSpecifications;
-import org.mafagafogigante.dungeon.util.library.Libraries;
-import org.mafagafogigante.dungeon.util.library.Poem;
+import pro250.mobiledungeon.java.gui.WritingSpecifications;
+import pro250.mobiledungeon.java.util.library.Libraries;
+import pro250.mobiledungeon.java.util.library.Poem;
+
+import pro250.mobiledungeon.java.util.library.Libraries;
 
 /**
  * The main purpose of this class is to provide a public static parsePoemCommand method that parses poem commands.

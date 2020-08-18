@@ -1,6 +1,6 @@
 package pro250.mobiledungeon.java.achievements;
 
-import org.mafagafogigante.dungeon.game.Id;
+import pro250.mobiledungeon.java.game.Id;
 
 import java.util.ArrayList;
 import java.util.Collections;

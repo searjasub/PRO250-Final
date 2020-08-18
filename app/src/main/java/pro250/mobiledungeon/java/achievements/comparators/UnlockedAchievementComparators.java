@@ -1,6 +1,6 @@
 package pro250.mobiledungeon.java.achievements.comparators;
 
-import org.mafagafogigante.dungeon.achievements.UnlockedAchievement;
+import pro250.mobiledungeon.java.achievements.UnlockedAchievement;
 
 import java.util.Comparator;
 import java.util.HashMap;

@@ -1,21 +1,25 @@
 package pro250.mobiledungeon.java.game;
 
-import org.mafagafogigante.dungeon.entity.Entity;
-import org.mafagafogigante.dungeon.entity.Luminosity;
-import org.mafagafogigante.dungeon.entity.TagSet;
-import org.mafagafogigante.dungeon.entity.creatures.Creature;
-import org.mafagafogigante.dungeon.entity.items.Item;
-import org.mafagafogigante.dungeon.entity.items.ItemFactory;
-import org.mafagafogigante.dungeon.entity.items.LocationInventory;
-import org.mafagafogigante.dungeon.io.Version;
-import org.mafagafogigante.dungeon.util.Percentage;
-
 import org.jetbrains.annotations.NotNull;
+import pro250.mobiledungeon.java.entity.Entity;
+import pro250.mobiledungeon.java.entity.Luminosity;
+import pro250.mobiledungeon.java.entity.TagSet;
+import pro250.mobiledungeon.java.entity.creatures.Creature;
+import pro250.mobiledungeon.java.entity.items.Item;
+import pro250.mobiledungeon.java.entity.items.ItemFactory;
+import pro250.mobiledungeon.java.entity.items.LocationInventory;
+import pro250.mobiledungeon.java.io.Version;
+import pro250.mobiledungeon.java.util.Percentage;
 
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map.Entry;
+
+import pro250.mobiledungeon.java.entity.TagSet;
+import pro250.mobiledungeon.java.entity.creatures.Creature;
+import pro250.mobiledungeon.java.entity.items.ItemFactory;
+import pro250.mobiledungeon.java.io.Version;
 
 /**
  * The Location class that defines a Location of a World.

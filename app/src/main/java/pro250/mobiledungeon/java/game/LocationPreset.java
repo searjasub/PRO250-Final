@@ -1,8 +1,8 @@
 package pro250.mobiledungeon.java.game;
 
-import org.mafagafogigante.dungeon.entity.TagSet;
-import org.mafagafogigante.dungeon.game.Location.Tag;
-import org.mafagafogigante.dungeon.util.Percentage;
+import pro250.mobiledungeon.java.entity.TagSet;
+import pro250.mobiledungeon.java.game.Location.Tag;
+import pro250.mobiledungeon.java.util.Percentage;
 
 import java.util.ArrayList;
 import java.util.HashMap;

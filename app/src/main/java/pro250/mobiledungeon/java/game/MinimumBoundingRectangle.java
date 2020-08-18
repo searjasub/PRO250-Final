@@ -1,8 +1,10 @@
 package pro250.mobiledungeon.java.game;
 
-import org.mafagafogigante.dungeon.io.Version;
+import pro250.mobiledungeon.java.io.Version;
 
 import java.io.Serializable;
+
+import pro250.mobiledungeon.java.io.Version;
 
 public class MinimumBoundingRectangle implements Serializable {
 

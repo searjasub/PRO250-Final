@@ -1,13 +1,15 @@
 package pro250.mobiledungeon.java.game;
 
-import org.mafagafogigante.dungeon.io.Version;
-import org.mafagafogigante.dungeon.util.Percentage;
+import pro250.mobiledungeon.java.io.Version;
+import pro250.mobiledungeon.java.util.Percentage;
 
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+
+import pro250.mobiledungeon.java.io.Version;
 
 /**
  * A class that is responsible for distributing dungeons.

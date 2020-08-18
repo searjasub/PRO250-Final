@@ -1,6 +1,5 @@
 package pro250.mobiledungeon.java.util;
 
-
 import pro250.mobiledungeon.java.game.Name;
 
 /**

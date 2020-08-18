@@ -1,6 +1,6 @@
 package pro250.mobiledungeon.java.achievements;
 
-import org.mafagafogigante.dungeon.stats.BattleStatistics;
+import pro250.mobiledungeon.java.stats.BattleStatistics;
 
 import org.jetbrains.annotations.NotNull;
 

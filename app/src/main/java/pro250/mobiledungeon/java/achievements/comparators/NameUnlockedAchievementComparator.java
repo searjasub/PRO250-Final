@@ -1,7 +1,7 @@
 package pro250.mobiledungeon.java.achievements.comparators;
 
-import org.mafagafogigante.dungeon.achievements.UnlockedAchievement;
-import org.mafagafogigante.dungeon.io.Version;
+import pro250.mobiledungeon.java.achievements.UnlockedAchievement;
+import pro250.mobiledungeon.java.io.Version;
 
 import java.io.Serializable;
 import java.util.Comparator;

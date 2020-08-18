@@ -1,6 +1,6 @@
 package pro250.mobiledungeon.java.io;
 
-import org.mafagafogigante.dungeon.logging.DungeonLogger;
+import pro250.mobiledungeon.java.logging.DungeonLogger;
 
 /**
  * Sleeper class that handles Thread sleeping.

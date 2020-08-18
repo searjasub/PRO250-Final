@@ -1,11 +1,11 @@
 package pro250.mobiledungeon.java.game;
 
-import org.mafagafogigante.dungeon.date.Date;
-import org.mafagafogigante.dungeon.date.DungeonTimeUnit;
-import org.mafagafogigante.dungeon.date.Duration;
-import org.mafagafogigante.dungeon.entity.Luminosity;
-import org.mafagafogigante.dungeon.util.Percentage;
-import org.mafagafogigante.dungeon.util.Selectable;
+import pro250.mobiledungeon.java.date.Date;
+import pro250.mobiledungeon.java.date.DungeonTimeUnit;
+import pro250.mobiledungeon.java.date.Duration;
+import pro250.mobiledungeon.java.entity.Luminosity;
+import pro250.mobiledungeon.java.util.Percentage;
+import pro250.mobiledungeon.java.util.Selectable;
 
 import org.jetbrains.annotations.NotNull;
 

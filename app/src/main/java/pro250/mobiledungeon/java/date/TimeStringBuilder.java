@@ -1,7 +1,7 @@
 package pro250.mobiledungeon.java.date;
 
-import org.mafagafogigante.dungeon.util.NonNegativeInteger;
-import org.mafagafogigante.dungeon.util.Utils;
+import pro250.mobiledungeon.java.util.NonNegativeInteger;
+import pro250.mobiledungeon.java.util.Utils;
 
 import org.jetbrains.annotations.NotNull;
 

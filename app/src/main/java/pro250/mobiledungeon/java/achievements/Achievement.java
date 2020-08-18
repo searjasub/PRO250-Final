@@ -1,14 +1,17 @@
 package pro250.mobiledungeon.java.achievements;
 
-import org.mafagafogigante.dungeon.game.Id;
-import org.mafagafogigante.dungeon.game.PartOfDay;
-import org.mafagafogigante.dungeon.stats.BattleStatistics;
-import org.mafagafogigante.dungeon.stats.ExplorationStatistics;
-import org.mafagafogigante.dungeon.stats.Statistics;
-import org.mafagafogigante.dungeon.util.CounterMap;
+import pro250.mobiledungeon.java.game.Id;
+import pro250.mobiledungeon.java.game.PartOfDay;
+import pro250.mobiledungeon.java.stats.BattleStatistics;
+import pro250.mobiledungeon.java.stats.ExplorationStatistics;
+import pro250.mobiledungeon.java.stats.Statistics;
+import pro250.mobiledungeon.java.util.CounterMap;
 
 import java.util.Collection;
 import java.util.Set;
+
+import pro250.mobiledungeon.java.game.Id;
+import pro250.mobiledungeon.java.util.CounterMap;
 
 /**
  * Achievement class.

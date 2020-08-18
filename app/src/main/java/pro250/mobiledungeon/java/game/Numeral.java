@@ -1,6 +1,6 @@
 package pro250.mobiledungeon.java.game;
 
-import org.mafagafogigante.dungeon.logging.DungeonLogger;
+import pro250.mobiledungeon.java.logging.DungeonLogger;
 
 /**
  * Numeral enumerated type.
