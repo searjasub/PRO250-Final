@@ -10,6 +10,8 @@ import java.io.Reader;
 import java.io.Serializable;
 import java.util.Properties;
 
+import pro250.mobiledungeon.java.logging.DungeonLogger;
+
 public class Version implements Comparable<Version>, Serializable {
 
   public static final long MAJOR = 7L;

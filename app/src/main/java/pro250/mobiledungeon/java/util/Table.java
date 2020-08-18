@@ -1,10 +1,10 @@
 package pro250.mobiledungeon.java.util;
 
-import org.mafagafogigante.dungeon.game.ColoredString;
-import org.mafagafogigante.dungeon.game.DungeonString;
-import org.mafagafogigante.dungeon.game.Writable;
-import org.mafagafogigante.dungeon.gui.GameWindow;
-import org.mafagafogigante.dungeon.logging.DungeonLogger;
+import pro250.mobiledungeon.java.game.ColoredString;
+import pro250.mobiledungeon.java.game.DungeonString;
+import pro250.mobiledungeon.java.game.Writable;
+import pro250.mobiledungeon.java.gui.GameWindow;
+import pro250.mobiledungeon.java.logging.DungeonLogger;
 
 import java.util.ArrayList;
 import java.util.Arrays;

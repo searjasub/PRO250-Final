@@ -1,14 +1,15 @@
 package pro250.mobiledungeon.java.io;
 
-import org.mafagafogigante.dungeon.util.ColumnAlignment;
-import org.mafagafogigante.dungeon.util.Table;
-import org.mafagafogigante.dungeon.util.Utils;
-
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+
+import pro250.mobiledungeon.java.util.ColumnAlignment;
+import pro250.mobiledungeon.java.util.Table;
+import pro250.mobiledungeon.java.util.Utils;
+
 
 /**
  * This class provides a method to write to the screen a table with the existing saves.

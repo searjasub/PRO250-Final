@@ -1,7 +1,7 @@
 package pro250.mobiledungeon.java.util;
 
-import org.mafagafogigante.dungeon.game.BaseName;
-import org.mafagafogigante.dungeon.game.Name;
+import pro250.mobiledungeon.java.game.BaseName;
+import pro250.mobiledungeon.java.game.Name;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.math3.stat.descriptive.SummaryStatistics;

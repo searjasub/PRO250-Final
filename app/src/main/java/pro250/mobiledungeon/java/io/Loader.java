@@ -1,12 +1,5 @@
 package pro250.mobiledungeon.java.io;
 
-import org.mafagafogigante.dungeon.game.DungeonString;
-import org.mafagafogigante.dungeon.game.Game;
-import org.mafagafogigante.dungeon.game.GameState;
-import org.mafagafogigante.dungeon.logging.DungeonLogger;
-import org.mafagafogigante.dungeon.util.Messenger;
-import org.mafagafogigante.dungeon.util.StopWatch;
-
 import org.jetbrains.annotations.NotNull;
 
 import java.io.BufferedInputStream;
@@ -27,7 +20,14 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
-import javax.swing.JOptionPane;
+//import javax.swing.JOptionPane;
+
+import pro250.mobiledungeon.java.game.DungeonString;
+import pro250.mobiledungeon.java.game.Game;
+import pro250.mobiledungeon.java.game.GameState;
+import pro250.mobiledungeon.java.logging.DungeonLogger;
+import pro250.mobiledungeon.java.util.Messenger;
+import pro250.mobiledungeon.java.util.StopWatch;
 
 /**
  * Loader class that handles saving and loading the game.

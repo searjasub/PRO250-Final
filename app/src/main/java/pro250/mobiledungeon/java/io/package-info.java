@@ -3,4 +3,4 @@
  * screen.
  */
 
-package org.mafagafogigante.dungeon.io;
+package pro250.mobiledungeon.java.io;

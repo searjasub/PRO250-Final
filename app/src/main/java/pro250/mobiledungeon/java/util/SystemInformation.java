@@ -1,9 +1,9 @@
 package pro250.mobiledungeon.java.util;
 
-import org.mafagafogigante.dungeon.game.ColoredString;
-import org.mafagafogigante.dungeon.game.DungeonString;
-import org.mafagafogigante.dungeon.game.Writable;
-import org.mafagafogigante.dungeon.io.Converter;
+import pro250.mobiledungeon.java.game.ColoredString;
+import pro250.mobiledungeon.java.game.DungeonString;
+import pro250.mobiledungeon.java.game.Writable;
+import pro250.mobiledungeon.java.io.Converter;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

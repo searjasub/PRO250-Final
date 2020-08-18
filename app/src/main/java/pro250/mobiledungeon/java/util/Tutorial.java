@@ -1,13 +1,15 @@
 package pro250.mobiledungeon.java.util;
 
-import org.mafagafogigante.dungeon.game.ColoredString;
-import org.mafagafogigante.dungeon.game.DungeonString;
-import org.mafagafogigante.dungeon.game.Writable;
-import org.mafagafogigante.dungeon.io.DungeonResource;
-import org.mafagafogigante.dungeon.io.JsonObjectFactory;
-import org.mafagafogigante.dungeon.io.ResourceNameResolver;
+import pro250.mobiledungeon.java.game.ColoredString;
+import pro250.mobiledungeon.java.game.DungeonString;
+import pro250.mobiledungeon.java.game.Writable;
+import pro250.mobiledungeon.java.io.DungeonResource;
+import pro250.mobiledungeon.java.io.JsonObjectFactory;
+import pro250.mobiledungeon.java.io.ResourceNameResolver;
 
 import java.util.List;
+
+import pro250.mobiledungeon.java.game.Writable;
 
 /**
  * Tutorial class that contains the game tutorial.

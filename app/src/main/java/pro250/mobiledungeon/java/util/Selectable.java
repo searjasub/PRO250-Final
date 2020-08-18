@@ -1,6 +1,6 @@
 package pro250.mobiledungeon.java.util;
 
-import org.mafagafogigante.dungeon.game.Name;
+import pro250.mobiledungeon.java.game.Name;
 
 /**
  * Selectable interface that tags entities that are selectable through their name.

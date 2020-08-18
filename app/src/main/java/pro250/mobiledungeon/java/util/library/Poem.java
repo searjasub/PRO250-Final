@@ -1,8 +1,8 @@
 package pro250.mobiledungeon.java.util.library;
 
-import org.mafagafogigante.dungeon.game.ColoredString;
-import org.mafagafogigante.dungeon.game.DungeonString;
-import org.mafagafogigante.dungeon.game.Writable;
+import pro250.mobiledungeon.java.game.ColoredString;
+import pro250.mobiledungeon.java.game.DungeonString;
+import pro250.mobiledungeon.java.game.Writable;
 
 import java.util.List;
 

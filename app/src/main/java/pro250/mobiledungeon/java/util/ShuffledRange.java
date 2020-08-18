@@ -1,7 +1,7 @@
 package pro250.mobiledungeon.java.util;
 
-import org.mafagafogigante.dungeon.game.Random;
-import org.mafagafogigante.dungeon.logging.DungeonLogger;
+import pro250.mobiledungeon.java.game.Random;
+import pro250.mobiledungeon.java.logging.DungeonLogger;
 
 import java.util.ArrayList;
 import java.util.Collections;

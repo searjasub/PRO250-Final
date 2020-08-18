@@ -1,18 +1,21 @@
 package pro250.mobiledungeon.java.util;
 
-import org.mafagafogigante.dungeon.entity.Entity;
-import org.mafagafogigante.dungeon.game.Name;
+import pro250.mobiledungeon.java.entity.Entity;
+import pro250.mobiledungeon.java.game.Name;
 
 import org.jetbrains.annotations.NotNull;
 import org.joda.time.DurationFieldType;
 import org.joda.time.Period;
 import org.joda.time.format.PeriodFormat;
 
+import java.time.Period;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Locale;
+
+import pro250.mobiledungeon.java.entity.Entity;
 
 /**
  * General utility class.

@@ -5,6 +5,8 @@ import org.mafagafogigante.dungeon.entity.TagSet.InvalidTagException;
 
 import com.eclipsesource.json.JsonValue;
 
+import pro250.mobiledungeon.java.entity.TagSet;
+
 /**
  * A parser for TagSets from JSON objects.
  */
