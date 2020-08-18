@@ -1,7 +1,7 @@
 package pro250.mobiledungeon.java.stats;
 
-import org.mafagafogigante.dungeon.io.Version;
-import org.mafagafogigante.dungeon.util.CounterMap;
+import pro250.mobiledungeon.java.io.Version;
+import pro250.mobiledungeon.java.util.CounterMap;
 
 import java.io.Serializable;
 

@@ -1,9 +1,9 @@
 package pro250.mobiledungeon.java.spells;
 
-import org.mafagafogigante.dungeon.game.Id;
-import org.mafagafogigante.dungeon.game.Name;
-import org.mafagafogigante.dungeon.game.NameFactory;
-import org.mafagafogigante.dungeon.io.Version;
+import pro250.mobiledungeon.java.game.Id;
+import pro250.mobiledungeon.java.game.Name;
+import pro250.mobiledungeon.java.game.NameFactory;
+import pro250.mobiledungeon.java.io.Version;
 
 import java.io.Serializable;
 

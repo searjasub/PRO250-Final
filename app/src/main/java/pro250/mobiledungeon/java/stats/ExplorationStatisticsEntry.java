@@ -1,9 +1,9 @@
 package pro250.mobiledungeon.java.stats;
 
-import org.mafagafogigante.dungeon.date.Date;
-import org.mafagafogigante.dungeon.game.Id;
-import org.mafagafogigante.dungeon.game.PartOfDay;
-import org.mafagafogigante.dungeon.io.Version;
+import pro250.mobiledungeon.java.date.Date;
+import pro250.mobiledungeon.java.game.Id;
+import pro250.mobiledungeon.java.game.PartOfDay;
+import pro250.mobiledungeon.java.io.Version;
 
 import java.io.Serializable;
 

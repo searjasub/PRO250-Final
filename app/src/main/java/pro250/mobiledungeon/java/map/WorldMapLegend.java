@@ -1,6 +1,6 @@
 package pro250.mobiledungeon.java.map;
 
-import org.mafagafogigante.dungeon.game.DungeonString;
+import pro250.mobiledungeon.java.game.DungeonString;
 
 import org.jetbrains.annotations.NotNull;
 

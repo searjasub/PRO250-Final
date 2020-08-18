@@ -1,6 +1,6 @@
 package pro250.mobiledungeon.java.schema.rules;
 
-import org.mafagafogigante.dungeon.schema.JsonRule;
+import pro250.mobiledungeon.java.schema.JsonRule;
 
 import com.eclipsesource.json.JsonArray;
 import com.eclipsesource.json.JsonValue;

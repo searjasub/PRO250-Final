@@ -1,7 +1,7 @@
 package pro250.mobiledungeon.java.stats;
 
-import org.mafagafogigante.dungeon.game.Id;
-import org.mafagafogigante.dungeon.io.Version;
+import pro250.mobiledungeon.java.game.Id;
+import pro250.mobiledungeon.java.io.Version;
 
 import org.jetbrains.annotations.NotNull;
 

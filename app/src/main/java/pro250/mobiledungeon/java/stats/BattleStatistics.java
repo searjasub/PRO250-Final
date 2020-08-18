@@ -1,10 +1,10 @@
 package pro250.mobiledungeon.java.stats;
 
-import org.mafagafogigante.dungeon.achievements.BattleStatisticsRequirement;
-import org.mafagafogigante.dungeon.entity.creatures.Creature;
-import org.mafagafogigante.dungeon.game.PartOfDay;
-import org.mafagafogigante.dungeon.io.Version;
-import org.mafagafogigante.dungeon.util.CounterMap;
+import pro250.mobiledungeon.java.achievements.BattleStatisticsRequirement;
+import pro250.mobiledungeon.java.entity.creatures.Creature;
+import pro250.mobiledungeon.java.game.PartOfDay;
+import pro250.mobiledungeon.java.io.Version;
+import pro250.mobiledungeon.java.util.CounterMap;
 
 import org.jetbrains.annotations.NotNull;
 
