@@ -1,6 +1,6 @@
 package pro250.mobiledungeon.java.schema.rules;
 
-import org.mafagafogigante.dungeon.game.Id;
+import pro250.mobiledungeon.java.game.Id;
 
 import com.eclipsesource.json.JsonValue;
 

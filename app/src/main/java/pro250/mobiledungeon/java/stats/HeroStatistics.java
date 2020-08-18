@@ -1,6 +1,6 @@
 package pro250.mobiledungeon.java.stats;
 
-import org.mafagafogigante.dungeon.io.Version;
+import pro250.mobiledungeon.java.io.Version;
 
 import java.io.Serializable;
 

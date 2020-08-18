@@ -1,6 +1,6 @@
 package pro250.mobiledungeon.java.schema.rules;
 
-import org.mafagafogigante.dungeon.date.DungeonTimeParser;
+import pro250.mobiledungeon.java.date.DungeonTimeParser;
 
 import com.eclipsesource.json.JsonValue;
 

@@ -1,7 +1,7 @@
 package pro250.mobiledungeon.java.schema.rules;
 
-import org.mafagafogigante.dungeon.game.Id;
-import org.mafagafogigante.dungeon.schema.JsonRule;
+import pro250.mobiledungeon.java.game.Id;
+import pro250.mobiledungeon.java.schema.JsonRule;
 
 import java.util.Collection;
 import java.util.List;

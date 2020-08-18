@@ -1,7 +1,7 @@
 package pro250.mobiledungeon.java.logging;
 
-import org.mafagafogigante.dungeon.util.Messenger;
-import org.mafagafogigante.dungeon.util.StopWatch;
+import pro250.mobiledungeon.java.util.Messenger;
+import pro250.mobiledungeon.java.util.StopWatch;
 
 import java.io.File;
 import java.io.IOException;

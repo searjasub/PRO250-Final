@@ -1,20 +1,20 @@
 package pro250.mobiledungeon.java.spells;
 
-import org.mafagafogigante.dungeon.entity.creatures.Creature;
-import org.mafagafogigante.dungeon.entity.creatures.Hero;
-import org.mafagafogigante.dungeon.entity.creatures.HeroUtils;
-import org.mafagafogigante.dungeon.entity.items.Item;
-import org.mafagafogigante.dungeon.game.BlockedEntrances;
-import org.mafagafogigante.dungeon.game.Direction;
-import org.mafagafogigante.dungeon.game.DungeonString;
-import org.mafagafogigante.dungeon.game.Engine;
-import org.mafagafogigante.dungeon.game.Id;
-import org.mafagafogigante.dungeon.game.Location;
-import org.mafagafogigante.dungeon.game.Point;
-import org.mafagafogigante.dungeon.game.Random;
-import org.mafagafogigante.dungeon.io.Writer;
-import org.mafagafogigante.dungeon.stats.CauseOfDeath;
-import org.mafagafogigante.dungeon.stats.TypeOfCauseOfDeath;
+import pro250.mobiledungeon.java.entity.creatures.Creature;
+import pro250.mobiledungeon.java.entity.creatures.Hero;
+import pro250.mobiledungeon.java.entity.creatures.HeroUtils;
+import pro250.mobiledungeon.java.entity.items.Item;
+import pro250.mobiledungeon.java.game.BlockedEntrances;
+import pro250.mobiledungeon.java.game.Direction;
+import pro250.mobiledungeon.java.game.DungeonString;
+import pro250.mobiledungeon.java.game.Engine;
+import pro250.mobiledungeon.java.game.Id;
+import pro250.mobiledungeon.java.game.Location;
+import pro250.mobiledungeon.java.game.Point;
+import pro250.mobiledungeon.java.game.Random;
+import pro250.mobiledungeon.java.io.Writer;
+import pro250.mobiledungeon.java.stats.CauseOfDeath;
+import pro250.mobiledungeon.java.stats.TypeOfCauseOfDeath;
 
 import java.util.ArrayList;
 import java.util.HashMap;

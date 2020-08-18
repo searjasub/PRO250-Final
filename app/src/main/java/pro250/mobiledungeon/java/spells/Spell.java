@@ -1,10 +1,10 @@
 package pro250.mobiledungeon.java.spells;
 
-import org.mafagafogigante.dungeon.entity.creatures.Hero;
-import org.mafagafogigante.dungeon.game.Id;
-import org.mafagafogigante.dungeon.game.Name;
-import org.mafagafogigante.dungeon.io.Version;
-import org.mafagafogigante.dungeon.util.Selectable;
+import pro250.mobiledungeon.java.entity.creatures.Hero;
+import pro250.mobiledungeon.java.game.Id;
+import pro250.mobiledungeon.java.game.Name;
+import pro250.mobiledungeon.java.io.Version;
+import pro250.mobiledungeon.java.util.Selectable;
 
 import java.io.Serializable;
 

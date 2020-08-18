@@ -1,11 +1,11 @@
 package pro250.mobiledungeon.java.stats;
 
-import org.mafagafogigante.dungeon.commands.IssuedCommand;
-import org.mafagafogigante.dungeon.date.Date;
-import org.mafagafogigante.dungeon.io.Version;
-import org.mafagafogigante.dungeon.io.Writer;
-import org.mafagafogigante.dungeon.util.ColumnAlignment;
-import org.mafagafogigante.dungeon.util.Table;
+import pro250.mobiledungeon.java.commands.IssuedCommand;
+import pro250.mobiledungeon.java.date.Date;
+import pro250.mobiledungeon.java.io.Version;
+import pro250.mobiledungeon.java.io.Writer;
+import pro250.mobiledungeon.java.util.ColumnAlignment;
+import pro250.mobiledungeon.java.util.Table;
 
 import java.io.Serializable;
 import java.util.Arrays;

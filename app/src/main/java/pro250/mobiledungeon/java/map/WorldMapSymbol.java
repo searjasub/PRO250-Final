@@ -1,7 +1,7 @@
 package pro250.mobiledungeon.java.map;
 
-import org.mafagafogigante.dungeon.game.Location;
-import org.mafagafogigante.dungeon.game.LocationDescription;
+import pro250.mobiledungeon.java.game.Location;
+import pro250.mobiledungeon.java.game.LocationDescription;
 
 import org.jetbrains.annotations.NotNull;
 

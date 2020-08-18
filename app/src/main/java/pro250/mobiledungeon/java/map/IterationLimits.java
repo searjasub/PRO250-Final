@@ -1,6 +1,6 @@
 package pro250.mobiledungeon.java.map;
 
-import org.mafagafogigante.dungeon.game.Point;
+import pro250.mobiledungeon.java.game.Point;
 
 import org.jetbrains.annotations.NotNull;
 

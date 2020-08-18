@@ -1,6 +1,6 @@
 package pro250.mobiledungeon.java.schema.rules;
 
-import org.mafagafogigante.dungeon.util.Percentage;
+import pro250.mobiledungeon.java.util.Percentage;
 
 import com.eclipsesource.json.JsonValue;
 

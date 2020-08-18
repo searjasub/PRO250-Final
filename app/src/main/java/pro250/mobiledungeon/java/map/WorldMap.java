@@ -1,9 +1,9 @@
 package pro250.mobiledungeon.java.map;
 
-import org.mafagafogigante.dungeon.game.Game;
-import org.mafagafogigante.dungeon.game.Point;
-import org.mafagafogigante.dungeon.game.World;
-import org.mafagafogigante.dungeon.stats.ExplorationStatistics;
+import pro250.mobiledungeon.java.game.Game;
+import pro250.mobiledungeon.java.game.Point;
+import pro250.mobiledungeon.java.game.World;
+import pro250.mobiledungeon.java.stats.ExplorationStatistics;
 
 import org.jetbrains.annotations.NotNull;
 
