@@ -1,7 +1,7 @@
 package pro250.mobiledungeon.java.date;
 
-import org.mafagafogigante.dungeon.io.Version;
-import org.mafagafogigante.dungeon.logging.DungeonLogger;
+import pro250.mobiledungeon.java.io.Version;
+import pro250.mobiledungeon.java.logging.DungeonLogger;
 
 import org.jetbrains.annotations.NotNull;
 

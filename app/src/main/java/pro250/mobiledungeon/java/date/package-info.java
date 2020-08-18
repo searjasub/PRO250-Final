@@ -2,4 +2,4 @@
  * Defines all Dungeon in-game date utilities.
  */
 
-package org.mafagafogigante.dungeon.date;
+package pro250.mobiledungeon.java.date;
