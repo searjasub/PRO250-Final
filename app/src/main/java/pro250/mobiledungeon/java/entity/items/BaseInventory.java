@@ -8,6 +8,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import pro250.mobiledungeon.java.io.Version;
+
 /**
  * The abstract BaseInventory class all inventories inherit from.
  */

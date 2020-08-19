@@ -3,5 +3,5 @@
  * method search(IssuedCommand) that is used by the rest of the application to retrieve wiki articles.
  */
 
-package org.mafagafogigante.dungeon.wiki;
+package pro250.mobiledungeon.java.wiki;
 

@@ -1,8 +1,5 @@
 package pro250.mobiledungeon.java.commands;
 
-//import org.mafagafogigante.dungeon.io.Version;
-//import org.mafagafogigante.dungeon.util.CircularList;
-
 import org.apache.commons.lang3.StringUtils;
 import org.jetbrains.annotations.Nullable;
 

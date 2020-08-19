@@ -1,5 +1,7 @@
 package pro250.mobiledungeon.java.achievements;
 
+import android.graphics.Color;
+
 import pro250.mobiledungeon.java.achievements.comparators.UnlockedAchievementComparators;
 import pro250.mobiledungeon.java.date.Date;
 import pro250.mobiledungeon.java.date.Duration;
@@ -7,7 +9,7 @@ import pro250.mobiledungeon.java.game.DungeonString;
 import pro250.mobiledungeon.java.game.Game;
 import pro250.mobiledungeon.java.io.Writer;
 
-import java.awt.Color;
+//import java.awt.Color;
 import java.util.Comparator;
 import java.util.List;
 
@@ -60,13 +62,13 @@ public class AchievementTrackerWriter {
     DungeonString string = new DungeonString();
     for (UnlockedAchievement unlockedAchievement : unlockedAchievements) {
       Duration sinceUnlock = new Duration(unlockedAchievement.getDate(), now);
-      string.setColor(Color.ORANGE);
+      //string.setColor(Color.ORANGE);
       string.append(String.format("%s (%s ago)%n", unlockedAchievement.getName(), sinceUnlock));
-      string.setColor(Color.YELLOW);
+      //string.setColor(Color.YELLOW);
       string.append(String.format(" %s%n", unlockedAchievement.getInfo()));
     }
     int total = AchievementStoreFactory.getDefaultStore().getAchievements().size();
-    string.setColor(Color.CYAN);
+    //string.setColor(Color.CYAN);
     string.append(String.format("Progress: %d/%d", tracker.getUnlockedCount(), total));
     Writer.write(string);
   }

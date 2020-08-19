@@ -1,9 +1,8 @@
 package pro250.mobiledungeon.java.wiki;
 
-import org.mafagafogigante.dungeon.game.DungeonString;
-import org.mafagafogigante.dungeon.io.Writer;
-import org.mafagafogigante.dungeon.util.CounterMap;
-import org.mafagafogigante.dungeon.util.Matches;
+import pro250.mobiledungeon.java.game.DungeonString;
+import pro250.mobiledungeon.java.io.Writer;
+import pro250.mobiledungeon.java.util.*;
 
 import org.apache.commons.lang3.StringUtils;
 
