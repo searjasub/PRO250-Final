@@ -9,7 +9,6 @@ import pro250.mobiledungeon.java.game.DungeonString;
 import pro250.mobiledungeon.java.game.Game;
 import pro250.mobiledungeon.java.io.Writer;
 
-//import java.awt.Color;
 import java.util.Comparator;
 import java.util.List;
 
