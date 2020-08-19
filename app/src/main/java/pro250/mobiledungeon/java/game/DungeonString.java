@@ -6,7 +6,7 @@ import pro250.mobiledungeon.java.logging.DungeonLogger;
 
 import org.jetbrains.annotations.NotNull;
 
-import java.awt.Color;
+//import java.awt.Color;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -20,7 +20,7 @@ import pro250.mobiledungeon.java.logging.DungeonLogger;
  */
 public final class DungeonString extends Writable {
 
-  private static final Color DEFAULT_COLOR = Color.LIGHT_GRAY;
+//  private static final Color DEFAULT_COLOR = Color.LIGHT_GRAY;
 
   /**
    * A list of ColoredStrings. No string from this list is empty. Adjacent strings may have the same color.
@@ -29,7 +29,7 @@ public final class DungeonString extends Writable {
    */
   private final List<ColoredString> coloredStringList = new ArrayList<>();
   private final StringBuilder builder = new StringBuilder();
-  private Color currentColor = DEFAULT_COLOR;
+//  private Color currentColor = DEFAULT_COLOR;
 
   /**
    * Constructs an empty DungeonString.
@@ -50,7 +50,7 @@ public final class DungeonString extends Writable {
   public DungeonString(String text, Color color) {
     setColor(color);
     append(text);
-    resetColor();
+//    resetColor();
   }
 
   /**
@@ -77,7 +77,7 @@ public final class DungeonString extends Writable {
 
   private void addBuilderContentToList() {
     if (builder.length() != 0) {
-      coloredStringList.add(new ColoredString(builder.toString(), currentColor));
+//      coloredStringList.add(new ColoredString(builder.toString(), currentColor));
       builder.setLength(0);
     }
   }
@@ -106,24 +106,24 @@ public final class DungeonString extends Writable {
    * @param color a Color object
    */
   public void setColor(@NotNull Color color) {
-    if (currentColor != color) {
-      addBuilderContentToList();
-      currentColor = color;
-    }
+//    if (currentColor != color) {
+//      addBuilderContentToList();
+//      currentColor = color;
+//    }
   }
 
   /**
    * Resets the color of this DungeonString to the default color.
    */
-  public void resetColor() {
-    setColor(DEFAULT_COLOR);
-  }
+//  public void resetColor() {
+//    setColor(DEFAULT_COLOR);
+//  }
 
   @Override
   public String toString() {
     return "DungeonString{" +
         "coloredStringList=" + toColoredStringList() +
-        ", currentColor=" + currentColor +
+//        ", currentColor=" + currentColor +
         '}';
   }
 

@@ -11,7 +11,6 @@ import pro250.mobiledungeon.java.logging.DungeonLogger;
 import pro250.mobiledungeon.java.util.StopWatch;
 import pro250.mobiledungeon.java.util.Utils;
 
-import java.awt.Color;
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.List;
