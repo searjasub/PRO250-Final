@@ -14,7 +14,7 @@ import pro250.mobiledungeon.java.util.Selectable;
 /**
  * Enumerated type of the parts of the day.
  */
-public enum PartOfDay implements Selectable, Selectable {
+public enum PartOfDay implements Selectable {
 
   // Keep this array sorted by the startingHour in ascending order. See getCorrespondingConstant to understand why.
   NIGHT("Night", 0.4, 1),
