@@ -14,6 +14,7 @@ import com.eclipsesource.json.JsonObject;
 import com.eclipsesource.json.JsonObject.Member;
 import com.eclipsesource.json.JsonValue;
 
+import java.lang.reflect.Member;
 import java.util.Collection;
 
 /**
