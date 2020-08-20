@@ -1,10 +1,12 @@
 package pro250.mobiledungeon.java.game;
 
+import android.graphics.Color;
+
 import pro250.mobiledungeon.java.io.Version;
 
 import org.jetbrains.annotations.NotNull;
 
-import java.awt.Color;
+//import java.awt.Color;
 import java.io.Serializable;
 
 /**
