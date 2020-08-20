@@ -1,6 +1,6 @@
 package pro250.mobiledungeon.java.entity.items;
 
-import org.mafagafogigante.dungeon.game.Id;
+import pro250.mobiledungeon.java.game.Id;
 
 import org.jetbrains.annotations.NotNull;
 

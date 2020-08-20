@@ -1,6 +1,6 @@
 package pro250.mobiledungeon.java.entity.creatures;
 
-import org.mafagafogigante.dungeon.spells.Spell;
+import pro250.mobiledungeon.java.spells.Spell;
 
 import java.util.List;
 

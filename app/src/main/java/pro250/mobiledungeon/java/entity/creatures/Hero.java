@@ -1,46 +1,45 @@
 package pro250.mobiledungeon.java.entity.creatures;
 
-import static org.mafagafogigante.dungeon.date.DungeonTimeUnit.HOUR;
-import static org.mafagafogigante.dungeon.date.DungeonTimeUnit.SECOND;
+import static pro250.mobiledungeon.java.date.DungeonTimeUnit.HOUR;
+import static pro250.mobiledungeon.java.date.DungeonTimeUnit.SECOND;
 
-import org.mafagafogigante.dungeon.achievements.AchievementTracker;
-import org.mafagafogigante.dungeon.date.Date;
-import org.mafagafogigante.dungeon.date.Duration;
-import org.mafagafogigante.dungeon.entity.Enchantment;
-import org.mafagafogigante.dungeon.entity.Entity;
-import org.mafagafogigante.dungeon.entity.items.BaseInventory;
-import org.mafagafogigante.dungeon.entity.items.BookComponent;
-import org.mafagafogigante.dungeon.entity.items.CreatureInventory.SimulationResult;
-import org.mafagafogigante.dungeon.entity.items.DrinkableComponent;
-import org.mafagafogigante.dungeon.entity.items.FoodComponent;
-import org.mafagafogigante.dungeon.entity.items.Item;
-import org.mafagafogigante.dungeon.game.DungeonString;
-import org.mafagafogigante.dungeon.game.Engine;
-import org.mafagafogigante.dungeon.game.Game;
-import org.mafagafogigante.dungeon.game.Id;
-import org.mafagafogigante.dungeon.game.Location;
-import org.mafagafogigante.dungeon.game.Name;
-import org.mafagafogigante.dungeon.game.NameFactory;
-import org.mafagafogigante.dungeon.game.PartOfDay;
-import org.mafagafogigante.dungeon.game.QuantificationMode;
-import org.mafagafogigante.dungeon.game.Random;
-import org.mafagafogigante.dungeon.game.World;
-import org.mafagafogigante.dungeon.io.Sleeper;
-import org.mafagafogigante.dungeon.io.Version;
-import org.mafagafogigante.dungeon.io.Writer;
-import org.mafagafogigante.dungeon.spells.Spell;
-import org.mafagafogigante.dungeon.spells.SpellData;
-import org.mafagafogigante.dungeon.stats.Statistics;
-import org.mafagafogigante.dungeon.util.DungeonMath;
-import org.mafagafogigante.dungeon.util.Matches;
-import org.mafagafogigante.dungeon.util.Messenger;
-import org.mafagafogigante.dungeon.util.Utils;
-import org.mafagafogigante.dungeon.util.library.Libraries;
+import pro250.mobiledungeon.java.achievements.AchievementTracker;
+import pro250.mobiledungeon.java.date.Date;
+import pro250.mobiledungeon.java.date.Duration;
+import pro250.mobiledungeon.java.entity.Enchantment;
+import pro250.mobiledungeon.java.entity.Entity;
+import pro250.mobiledungeon.java.entity.items.BaseInventory;
+import pro250.mobiledungeon.java.entity.items.BookComponent;
+import pro250.mobiledungeon.java.entity.items.CreatureInventory.SimulationResult;
+import pro250.mobiledungeon.java.entity.items.DrinkableComponent;
+import pro250.mobiledungeon.java.entity.items.FoodComponent;
+import pro250.mobiledungeon.java.entity.items.Item;
+import pro250.mobiledungeon.java.game.DungeonString;
+import pro250.mobiledungeon.java.game.Engine;
+import pro250.mobiledungeon.java.game.Game;
+import pro250.mobiledungeon.java.game.Id;
+import pro250.mobiledungeon.java.game.Location;
+import pro250.mobiledungeon.java.game.Name;
+import pro250.mobiledungeon.java.game.NameFactory;
+import pro250.mobiledungeon.java.game.PartOfDay;
+import pro250.mobiledungeon.java.game.QuantificationMode;
+import pro250.mobiledungeon.java.game.Random;
+import pro250.mobiledungeon.java.game.World;
+import pro250.mobiledungeon.java.io.Sleeper;
+import pro250.mobiledungeon.java.io.Version;
+import pro250.mobiledungeon.java.io.Writer;
+import pro250.mobiledungeon.java.spells.Spell;
+import pro250.mobiledungeon.java.spells.SpellData;
+import pro250.mobiledungeon.java.stats.Statistics;
+import pro250.mobiledungeon.java.util.DungeonMath;
+import pro250.mobiledungeon.java.util.Matches;
+import pro250.mobiledungeon.java.util.Messenger;
+import pro250.mobiledungeon.java.util.Utils;
+import pro250.mobiledungeon.java.util.library.Libraries;
 
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-import java.awt.Color;
 import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
@@ -427,14 +426,14 @@ public class Hero extends Creature {
     DungeonString text = new DungeonString("You are carrying:");
     text.append("\n");
     for (Item item : getInventory().getItems()) {
-      text.setColor(item.getRarity().getColor());
+//      text.setColor(item.getRarity().getColor());
       if (hasWeapon() && getWeapon() == item) {
         text.append(" [Equipped]");
       }
       text.append(String.format(" %s (%s)", item.getQualifiedName(), item.getWeight()));
       text.append("\n");
     }
-    Writer.write(text);
+//    Writer.write(text);
   }
 
   /**
@@ -569,7 +568,7 @@ public class Hero extends Creature {
     Item selectedItem = selectInventoryItem(arguments);
     if (selectedItem != null) {
       DungeonString text = new DungeonString();
-      text.setColor(selectedItem.getRarity().getColor());
+//      text.setColor(selectedItem.getRarity().getColor());
       text.append(selectedItem.getQualifiedName());
       text.append(" ");
       text.append("(");
@@ -577,7 +576,7 @@ public class Hero extends Creature {
       text.append(")");
       text.append("\n");
       text.append("\n");
-      text.resetColor();
+//      text.resetColor();
       if (selectedItem.getWeaponComponent() != null) {
         List<Enchantment> enchantments = selectedItem.getWeaponComponent().getEnchantments();
         if (!enchantments.isEmpty()) {
@@ -603,7 +602,7 @@ public class Hero extends Creature {
       text.append(String.valueOf(selectedItem.getWeaponComponent().getHitRate()));
       text.append(".");
       text.append("\n");
-      Writer.write(text);
+//      Writer.write(text);
     }
   }
 
@@ -625,7 +624,7 @@ public class Hero extends Creature {
         if (getInventory().hasItem(selectedItem)) { // Just in case if a readable item eventually decomposes.
           DungeonString string = new DungeonString(book.getText());
           string.append("\n\n");
-          Writer.write(string);
+//          Writer.write(string);
           if (book.isDidactic()) {
             learnSpell(book);
           }
@@ -701,7 +700,7 @@ public class Hero extends Creature {
       DungeonString string = new DungeonString();
       string.append(getName() + " equipped " + weapon.getQualifiedName() + ".");
       string.append(" " + "Your total damage is now " + getTotalDamage() + ".");
-      Writer.write(string);
+//      Writer.write(string);
     } else {
       HeroUtils.writeNoLongerInInventoryMessage(weapon);
     }
@@ -753,7 +752,7 @@ public class Hero extends Creature {
     } else {
       string.append("You are fighting bare-handed.\n");
     }
-    Writer.write(string);
+//    Writer.write(string);
   }
 
   private int getTotalDamage() {
@@ -764,7 +763,7 @@ public class Hero extends Creature {
    * Prints the Hero's age.
    */
   public void printAge() {
-    Writer.write(new DungeonString("You are " + getAgeString() + " old.", Color.CYAN));
+//    Writer.write(new DungeonString("You are " + getAgeString() + " old."));
   }
 
   private String getAgeString() {
@@ -864,7 +863,7 @@ public class Hero extends Creature {
       string.append(Utils.enumerate(getSpellcaster().getSpellList()));
       string.append(".");
     }
-    Writer.write(string);
+//    Writer.write(string);
   }
 
   /**
@@ -888,7 +887,7 @@ public class Hero extends Creature {
         string.append("\n");
       }
     }
-    Writer.write(string);
+//    Writer.write(string);
   }
 
 }

@@ -1,12 +1,12 @@
 package pro250.mobiledungeon.java.entity.creatures;
 
-import org.mafagafogigante.dungeon.entity.Entity;
-import org.mafagafogigante.dungeon.entity.items.Item;
-import org.mafagafogigante.dungeon.game.BaseName;
-import org.mafagafogigante.dungeon.game.Name;
-import org.mafagafogigante.dungeon.io.Writer;
-import org.mafagafogigante.dungeon.util.Matches;
-import org.mafagafogigante.dungeon.util.Messenger;
+import pro250.mobiledungeon.java.entity.Entity;
+import pro250.mobiledungeon.java.entity.items.Item;
+import pro250.mobiledungeon.java.game.BaseName;
+import pro250.mobiledungeon.java.game.Name;
+import pro250.mobiledungeon.java.io.Writer;
+import pro250.mobiledungeon.java.util.Matches;
+import pro250.mobiledungeon.java.util.Messenger;
 
 import java.util.ArrayList;
 import java.util.Collection;

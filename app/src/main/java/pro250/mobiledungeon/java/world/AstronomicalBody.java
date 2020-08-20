@@ -1,6 +1,6 @@
 package pro250.mobiledungeon.java.world;
 
-import org.mafagafogigante.dungeon.entity.creatures.Observer;
+import pro250.mobiledungeon.java.entity.creatures.Observer;
 
 /**
  * An astronomical body that may be seen from a world.

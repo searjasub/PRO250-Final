@@ -1,8 +1,8 @@
 package pro250.mobiledungeon.java.entity.items;
 
-import org.mafagafogigante.dungeon.game.Id;
-import org.mafagafogigante.dungeon.game.Random;
-import org.mafagafogigante.dungeon.io.Version;
+import pro250.mobiledungeon.java.game.Id;
+import pro250.mobiledungeon.java.game.Random;
+import pro250.mobiledungeon.java.io.Version;
 
 import java.io.Serializable;
 import java.util.ArrayList;

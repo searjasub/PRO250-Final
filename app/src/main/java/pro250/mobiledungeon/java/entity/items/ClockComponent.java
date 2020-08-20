@@ -1,9 +1,9 @@
 package pro250.mobiledungeon.java.entity.items;
 
-import org.mafagafogigante.dungeon.date.Date;
-import org.mafagafogigante.dungeon.game.Game;
-import org.mafagafogigante.dungeon.game.Random;
-import org.mafagafogigante.dungeon.io.Version;
+import pro250.mobiledungeon.java.date.Date;
+import pro250.mobiledungeon.java.game.Game;
+import pro250.mobiledungeon.java.game.Random;
+import pro250.mobiledungeon.java.io.Version;
 
 import java.io.Serializable;
 

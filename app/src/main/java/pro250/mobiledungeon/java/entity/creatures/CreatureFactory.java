@@ -1,15 +1,15 @@
 package pro250.mobiledungeon.java.entity.creatures;
 
-import org.mafagafogigante.dungeon.date.Date;
-import org.mafagafogigante.dungeon.entity.items.CreatureInventory.SimulationResult;
-import org.mafagafogigante.dungeon.entity.items.Item;
-import org.mafagafogigante.dungeon.entity.items.ItemFactory;
-import org.mafagafogigante.dungeon.game.Game;
-import org.mafagafogigante.dungeon.game.Id;
-import org.mafagafogigante.dungeon.game.World;
-import org.mafagafogigante.dungeon.io.Version;
-import org.mafagafogigante.dungeon.logging.DungeonLogger;
-import org.mafagafogigante.dungeon.stats.Statistics;
+import pro250.mobiledungeon.java.date.Date;
+import pro250.mobiledungeon.java.entity.items.CreatureInventory.SimulationResult;
+import pro250.mobiledungeon.java.entity.items.Item;
+import pro250.mobiledungeon.java.entity.items.ItemFactory;
+import pro250.mobiledungeon.java.game.Game;
+import pro250.mobiledungeon.java.game.Id;
+import pro250.mobiledungeon.java.game.World;
+import pro250.mobiledungeon.java.io.Version;
+import pro250.mobiledungeon.java.logging.DungeonLogger;
+import pro250.mobiledungeon.java.stats.Statistics;
 
 import org.jetbrains.annotations.NotNull;
 

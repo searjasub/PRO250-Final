@@ -1,8 +1,8 @@
 package pro250.mobiledungeon.java.world;
 
-import org.mafagafogigante.dungeon.entity.creatures.Observer;
-import org.mafagafogigante.dungeon.io.Version;
-import org.mafagafogigante.dungeon.util.Utils;
+import pro250.mobiledungeon.java.entity.creatures.Observer;
+import pro250.mobiledungeon.java.io.Version;
+import pro250.mobiledungeon.java.util.Utils;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -14,38 +14,38 @@ import java.util.List;
  */
 public class Sky implements Serializable {
 
-  private static final long serialVersionUID = Version.MAJOR;
-  private final Collection<AstronomicalBody> astronomicalBodies = new ArrayList<>();
+    private static final long serialVersionUID = Version.MAJOR;
+    private final Collection<AstronomicalBody> astronomicalBodies = new ArrayList<>();
 
-  /**
-   * Constructs an empty sky.
-   */
-  Sky() {
-  }
-
-  /**
-   * Adds an astronomical body to the sky.
-   */
-  void addAstronomicalBody(AstronomicalBody astronomicalBody) {
-    astronomicalBodies.add(astronomicalBody);
-  }
-
-  /**
-   * Returns a description of the sky with all its visible features.
-   */
-  public String describeYourself(Observer observer) {
-    List<String> descriptions = new ArrayList<>();
-    for (AstronomicalBody astronomicalBody : astronomicalBodies) {
-      if (astronomicalBody.isVisible(observer)) {
-        descriptions.add(astronomicalBody.describeYourself());
-      }
+    /**
+     * Constructs an empty sky.
+     */
+    Sky() {
     }
-    return Utils.enumerate(descriptions);
-  }
 
-  @Override
-  public String toString() {
-    return "Sky{astronomicalBodies=" + astronomicalBodies + '}';
-  }
+    /**
+     * Adds an astronomical body to the sky.
+     */
+    void addAstronomicalBody(AstronomicalBody astronomicalBody) {
+        astronomicalBodies.add(astronomicalBody);
+    }
+
+    /**
+     * Returns a description of the sky with all its visible features.
+     */
+    public String describeYourself(Observer observer) {
+        List<String> descriptions = new ArrayList<>();
+        for (AstronomicalBody astronomicalBody : astronomicalBodies) {
+            if (astronomicalBody.isVisible(observer)) {
+                descriptions.add(astronomicalBody.describeYourself());
+            }
+        }
+        return Utils.enumerate(descriptions);
+    }
+
+    @Override
+    public String toString() {
+        return "Sky{astronomicalBodies=" + astronomicalBodies + '}';
+    }
 
 }

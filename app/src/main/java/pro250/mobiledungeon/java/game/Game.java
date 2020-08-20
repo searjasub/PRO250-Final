@@ -11,26 +11,17 @@ import pro250.mobiledungeon.java.logging.DungeonLogger;
 import pro250.mobiledungeon.java.util.StopWatch;
 import pro250.mobiledungeon.java.util.Utils;
 
-import java.awt.Color;
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.swing.JOptionPane;
-import javax.swing.SwingUtilities;
 
-import pro250.mobiledungeon.java.commands.IssuedCommand;
-import pro250.mobiledungeon.java.gui.GameWindow;
-import pro250.mobiledungeon.java.io.Loader;
-import pro250.mobiledungeon.java.io.Writer;
-import pro250.mobiledungeon.java.util.StopWatch;
-import pro250.mobiledungeon.java.util.Utils;
+
 
 public class Game {
 
   private static final InstanceInformation instanceInformation = new InstanceInformation();
 
-  private static GameWindow gameWindow;
   private static GameState gameState;
   /**
    * The main method.
@@ -38,18 +29,12 @@ public class Game {
   public static void main(String[] args) {
     final StopWatch stopWatch = new StopWatch();
     DungeonLogger.info("Started initializing Dungeon " + Version.getCurrentVersion() + ".");
-    invokeOnEventDispatchThreadAndWait(new Runnable() {
-      @Override
-      public void run() {
-        gameWindow = new GameWindow();
-      }
-    });
+
     DungeonLogger.info("Finished making the window. Took " + stopWatch.toString() + ".");
     setGameState(getInitialGameState());
     invokeOnEventDispatchThreadAndWait(new Runnable() {
       @Override
       public void run() {
-        getGameWindow().startAcceptingCommands();
         DungeonLogger.info("Signaled the window to start accepting commands.");
       }
     });
@@ -60,11 +45,7 @@ public class Game {
    * finishes the application.
    */
   private static void invokeOnEventDispatchThreadAndWait(Runnable runnable) {
-    try {
-      SwingUtilities.invokeAndWait(runnable);
-    } catch (InterruptedException | InvocationTargetException fatal) {
-      DungeonLogger.logSevere(fatal);
-    }
+
   }
 
   /**
@@ -86,7 +67,6 @@ public class Game {
   }
 
   private static void suggestTutorial() {
-    Writer.write(new DungeonString("\nYou may want to issue 'tutorial' to learn the basics.\n"));
   }
 
   /**
@@ -95,17 +75,13 @@ public class Game {
   private static GameState getAfterDeathGameState() {
     GameState gameState = Loader.loadGame(false);
     if (gameState != null) {
-      JOptionPane.showMessageDialog(getGameWindow(), "Loaded the most recent saved game.");
+
     } else {
       gameState = Loader.newGame();
-      JOptionPane.showMessageDialog(getGameWindow(), "Could not load a saved game. Created a new game.");
     }
     return gameState;
   }
 
-  public static GameWindow getGameWindow() {
-    return gameWindow;
-  }
 
   public static GameState getGameState() {
     return gameState;
@@ -128,7 +104,6 @@ public class Game {
     DungeonLogger.info("Set the GameState field in Game to a GameState.");
     // This is a new GameState that must be refreshed in order to have spawned creatures at the beginning.
     Engine.refresh();
-    Writer.write(new DungeonString("\n")); // Improves readability.
     gameState.getHero().look();
   }
 
@@ -145,13 +120,11 @@ public class Game {
   public static void renderTurn(IssuedCommand issuedCommand, StopWatch stopWatch) {
     DungeonLogger.logCommandRenderingReport(issuedCommand.toString(), "started renderTurn", stopWatch);
     // Clears the text pane.
-    getGameWindow().clearTextPane();
     DungeonLogger.logCommandRenderingReport(issuedCommand.toString(), "started processInput", stopWatch);
     boolean wasSuccessful = processInput(issuedCommand);
     DungeonLogger.logCommandRenderingReport(issuedCommand.toString(), "finished processInput", stopWatch);
     if (wasSuccessful) {
       if (getGameState().getHero().getHealth().isDead()) {
-        getGameWindow().clearTextPane();
         Writer.write("You died.");
         unsetGameState();
         setGameState(getAfterDeathGameState());
@@ -179,7 +152,6 @@ public class Game {
       return true;
     } else {
       DungeonString string = new DungeonString();
-      string.setColor(Color.RED);
       string.append("That is not a valid command.\n");
       string.append("But it is similar to ");
       List<String> suggestionsBetweenCommas = new ArrayList<>();
@@ -188,9 +160,7 @@ public class Game {
       }
       string.append(Utils.enumerate(suggestionsBetweenCommas));
       string.append(".\n");
-      string.setColor(Color.ORANGE);
       string.append("See 'commands' for a complete list of commands.");
-      Writer.write(string);
       return false;
     }
   }

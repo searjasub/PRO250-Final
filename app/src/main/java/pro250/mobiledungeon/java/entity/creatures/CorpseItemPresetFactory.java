@@ -1,16 +1,16 @@
 package pro250.mobiledungeon.java.entity.creatures;
 
-import static org.mafagafogigante.dungeon.date.DungeonTimeUnit.DAY;
-import static org.mafagafogigante.dungeon.date.DungeonTimeUnit.SECOND;
+import static pro250.mobiledungeon.java.date.DungeonTimeUnit.DAY;
+import static pro250.mobiledungeon.java.date.DungeonTimeUnit.SECOND;
 
-import org.mafagafogigante.dungeon.entity.Integrity;
-import org.mafagafogigante.dungeon.entity.items.Item;
-import org.mafagafogigante.dungeon.entity.items.ItemPreset;
-import org.mafagafogigante.dungeon.entity.items.ItemPresetFactory;
-import org.mafagafogigante.dungeon.entity.items.Rarity;
-import org.mafagafogigante.dungeon.game.Id;
-import org.mafagafogigante.dungeon.game.NameFactory;
-import org.mafagafogigante.dungeon.util.Percentage;
+import pro250.mobiledungeon.java.entity.Integrity;
+import pro250.mobiledungeon.java.entity.items.Item;
+import pro250.mobiledungeon.java.entity.items.ItemPreset;
+import pro250.mobiledungeon.java.entity.items.ItemPresetFactory;
+import pro250.mobiledungeon.java.entity.items.Rarity;
+import pro250.mobiledungeon.java.game.Id;
+import pro250.mobiledungeon.java.game.NameFactory;
+import pro250.mobiledungeon.java.util.Percentage;
 
 import org.jetbrains.annotations.NotNull;
 

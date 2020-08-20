@@ -1,15 +1,15 @@
 package pro250.mobiledungeon.java.entity.creatures;
 
-import org.mafagafogigante.dungeon.entity.Luminosity;
-import org.mafagafogigante.dungeon.entity.Preset;
-import org.mafagafogigante.dungeon.entity.TagSet;
-import org.mafagafogigante.dungeon.entity.Weight;
-import org.mafagafogigante.dungeon.entity.creatures.Creature.Tag;
-import org.mafagafogigante.dungeon.game.Id;
-import org.mafagafogigante.dungeon.game.Name;
-import org.mafagafogigante.dungeon.io.Version;
-import org.mafagafogigante.dungeon.logging.DungeonLogger;
-import org.mafagafogigante.dungeon.util.Percentage;
+import pro250.mobiledungeon.java.entity.Luminosity;
+import pro250.mobiledungeon.java.entity.Preset;
+import pro250.mobiledungeon.java.entity.TagSet;
+import pro250.mobiledungeon.java.entity.Weight;
+import pro250.mobiledungeon.java.entity.creatures.Creature.Tag;
+import pro250.mobiledungeon.java.game.Id;
+import pro250.mobiledungeon.java.game.Name;
+import pro250.mobiledungeon.java.io.Version;
+import pro250.mobiledungeon.java.logging.DungeonLogger;
+import pro250.mobiledungeon.java.util.Percentage;
 
 import java.io.Serializable;
 import java.util.List;

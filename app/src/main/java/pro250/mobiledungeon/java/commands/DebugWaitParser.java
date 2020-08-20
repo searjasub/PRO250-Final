@@ -4,14 +4,14 @@ import android.graphics.Color;
 
 import org.apache.commons.lang3.StringUtils;
 import org.jetbrains.annotations.NotNull;
-//import org.mafagafogigante.dungeon.date.DungeonTimeParser;
-//import org.mafagafogigante.dungeon.date.Duration;
-//import org.mafagafogigante.dungeon.game.Engine;
-//import org.mafagafogigante.dungeon.game.Game;
-//import org.mafagafogigante.dungeon.game.PartOfDay;
-//import org.mafagafogigante.dungeon.io.Writer;
-//import org.mafagafogigante.dungeon.util.Matches;
-//import org.mafagafogigante.dungeon.util.Messenger;
+//import pro250.mobiledungeon.java.date.DungeonTimeParser;
+//import pro250.mobiledungeon.java.date.Duration;
+//import pro250.mobiledungeon.java.game.Engine;
+//import pro250.mobiledungeon.java.game.Game;
+//import pro250.mobiledungeon.java.game.PartOfDay;
+//import pro250.mobiledungeon.java.io.Writer;
+//import pro250.mobiledungeon.java.util.Matches;
+//import pro250.mobiledungeon.java.util.Messenger;
 
 //import android.graphics.Color;
 import java.util.Arrays;
@@ -63,13 +63,13 @@ class DebugWaitParser {
     //final Color highlightColor = new Color();
     //string.setColor(highlightColor);
     string.append("for");
-    string.resetColor();
+//    string.resetColor();
     string.append(" [amount of time] or wait ");
     //string.setColor(highlightColor);
     string.append("until next");
-    string.resetColor();
+//    string.resetColor();
     string.append(" [part of the day].");
-    Writer.write(string);
+//    Writer.write(string);
   }
 
   static void parseDebugWait(@NotNull String[] arguments) {

@@ -1,10 +1,10 @@
 package pro250.mobiledungeon.java.entity.creatures;
 
-import org.mafagafogigante.dungeon.entity.items.Item;
-import org.mafagafogigante.dungeon.game.Random;
-import org.mafagafogigante.dungeon.stats.CauseOfDeath;
-import org.mafagafogigante.dungeon.stats.TypeOfCauseOfDeath;
-import org.mafagafogigante.dungeon.util.Percentage;
+import pro250.mobiledungeon.java.entity.items.Item;
+import pro250.mobiledungeon.java.game.Random;
+import pro250.mobiledungeon.java.stats.CauseOfDeath;
+import pro250.mobiledungeon.java.stats.TypeOfCauseOfDeath;
+import pro250.mobiledungeon.java.util.Percentage;
 
 import org.jetbrains.annotations.NotNull;
 
