@@ -8,7 +8,6 @@ import org.joda.time.DurationFieldType;
 import org.joda.time.Period;
 import org.joda.time.format.PeriodFormat;
 
-import java.time.Period;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;

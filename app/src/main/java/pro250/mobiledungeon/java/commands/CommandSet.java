@@ -1,10 +1,9 @@
 package pro250.mobiledungeon.java.commands;
 
-//import org.mafagafogigante.dungeon.game.DungeonString;
-//import org.mafagafogigante.dungeon.io.Writer;
+//import pro250.mobiledungeon.java.game.DungeonString;
+//import pro250.mobiledungeon.java.io.Writer;
 
 import org.apache.commons.lang3.StringUtils;
-import StringUtils.*;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
@@ -59,7 +58,7 @@ public final class CommandSet {
               dungeonString.append("\nYou can filter the output of this command by typing the beginning of a command.");
             }
           }
-          Writer.write(dungeonString);
+//          Writer.write(dungeonString);
         }
       }
     });

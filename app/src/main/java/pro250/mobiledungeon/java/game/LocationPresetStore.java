@@ -1,5 +1,7 @@
 package pro250.mobiledungeon.java.game;
 
+import android.graphics.Color;
+
 import pro250.mobiledungeon.java.game.LocationPreset.Type;
 import pro250.mobiledungeon.java.io.DungeonResource;
 import pro250.mobiledungeon.java.io.JsonObjectFactory;
@@ -11,7 +13,7 @@ import com.eclipsesource.json.JsonArray;
 import com.eclipsesource.json.JsonObject;
 import com.eclipsesource.json.JsonValue;
 
-import java.awt.Color;
+//import java.awt.Color;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
@@ -35,7 +37,7 @@ public final class LocationPresetStore {
   }
 
   private static Color colorFromJsonArray(JsonArray color) {
-    return new Color(color.get(0).asInt(), color.get(1).asInt(), color.get(2).asInt());
+    return null;//new Color(color.get(0).asInt(), color.get(1).asInt(), color.get(2).asInt());
   }
 
   /**

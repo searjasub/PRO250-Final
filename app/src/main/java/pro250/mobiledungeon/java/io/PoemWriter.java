@@ -1,10 +1,7 @@
 package pro250.mobiledungeon.java.io;
 
-import pro250.mobiledungeon.java.gui.WritingSpecifications;
 import pro250.mobiledungeon.java.util.library.Libraries;
 import pro250.mobiledungeon.java.util.library.Poem;
-
-import pro250.mobiledungeon.java.util.library.Libraries;
 
 /**
  * The main purpose of this class is to provide a public static parsePoemCommand method that parses poem commands.
@@ -45,7 +42,7 @@ public final class PoemWriter {
   }
 
   private static void writePoem(Poem poem) {
-    Writer.write(poem, new WritingSpecifications(false, 0));
+//    Writer.write(poem);
   }
 
 }

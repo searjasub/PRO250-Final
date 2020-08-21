@@ -7,17 +7,17 @@ import java.util.List;
  */
 public abstract class Writable {
 
-  public abstract List<ColoredString> toColoredStringList();
+    public abstract List<ColoredString> toColoredStringList();
 
-  /**
-   * Converts all writable text of this Writable object to a plain Java String.
-   */
-  protected String toJavaString() {
-    StringBuilder builder = new StringBuilder();
-    for (ColoredString coloredString : toColoredStringList()) {
-      builder.append(coloredString.getString());
+    /**
+     * Converts all writable text of this Writable object to a plain Java String.
+     */
+    protected String toJavaString() {
+        StringBuilder builder = new StringBuilder();
+        for (ColoredString coloredString : toColoredStringList()) {
+            builder.append(coloredString.getString());
+        }
+        return builder.toString();
     }
-    return builder.toString();
-  }
 
 }

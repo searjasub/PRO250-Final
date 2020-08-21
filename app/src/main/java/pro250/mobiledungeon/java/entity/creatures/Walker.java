@@ -1,17 +1,16 @@
 package pro250.mobiledungeon.java.entity.creatures;
 
-import org.mafagafogigante.dungeon.game.Direction;
-import org.mafagafogigante.dungeon.game.DungeonString;
-import org.mafagafogigante.dungeon.game.Engine;
-import org.mafagafogigante.dungeon.game.Game;
-import org.mafagafogigante.dungeon.game.GameState;
-import org.mafagafogigante.dungeon.game.Point;
-import org.mafagafogigante.dungeon.game.World;
-import org.mafagafogigante.dungeon.io.Version;
-import org.mafagafogigante.dungeon.io.Writer;
-import org.mafagafogigante.dungeon.stats.ExplorationStatistics;
+import pro250.mobiledungeon.java.game.Direction;
+import pro250.mobiledungeon.java.game.DungeonString;
+import pro250.mobiledungeon.java.game.Engine;
+import pro250.mobiledungeon.java.game.Game;
+import pro250.mobiledungeon.java.game.GameState;
+import pro250.mobiledungeon.java.game.Point;
+import pro250.mobiledungeon.java.game.World;
+import pro250.mobiledungeon.java.io.Version;
+import pro250.mobiledungeon.java.io.Writer;
+import pro250.mobiledungeon.java.stats.ExplorationStatistics;
 
-import java.awt.Color;
 import java.io.Serializable;
 
 /**
@@ -36,7 +35,7 @@ class Walker implements Serializable {
       }
       Writer.write("Invalid input.");
     } else {
-      Writer.write(new DungeonString("To where?", Color.ORANGE));
+//      Writer.write(new DungeonString("To where?"));
     }
   }
 

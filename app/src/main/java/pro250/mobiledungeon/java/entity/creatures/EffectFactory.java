@@ -1,12 +1,12 @@
 package pro250.mobiledungeon.java.entity.creatures;
 
-import org.mafagafogigante.dungeon.date.Date;
-import org.mafagafogigante.dungeon.date.DungeonTimeParser;
-import org.mafagafogigante.dungeon.date.DungeonTimeUnit;
-import org.mafagafogigante.dungeon.date.Duration;
-import org.mafagafogigante.dungeon.game.Id;
-import org.mafagafogigante.dungeon.io.Version;
-import org.mafagafogigante.dungeon.util.Percentage;
+import pro250.mobiledungeon.java.date.Date;
+import pro250.mobiledungeon.java.date.DungeonTimeParser;
+import pro250.mobiledungeon.java.date.DungeonTimeUnit;
+import pro250.mobiledungeon.java.date.Duration;
+import pro250.mobiledungeon.java.game.Id;
+import pro250.mobiledungeon.java.io.Version;
+import pro250.mobiledungeon.java.util.Percentage;
 
 import java.io.Serializable;
 import java.util.HashMap;

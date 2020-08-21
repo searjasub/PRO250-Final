@@ -1,12 +1,12 @@
 package pro250.mobiledungeon.java.entity;
 
-import org.mafagafogigante.dungeon.game.Id;
-import org.mafagafogigante.dungeon.game.Name;
-import org.mafagafogigante.dungeon.io.Version;
-import org.mafagafogigante.dungeon.util.Percentage;
-import org.mafagafogigante.dungeon.util.Selectable;
-import org.mafagafogigante.dungeon.world.LuminosityVisibilityCriterion;
-import org.mafagafogigante.dungeon.world.VisibilityCriteria;
+import pro250.mobiledungeon.java.game.Id;
+import pro250.mobiledungeon.java.game.Name;
+import pro250.mobiledungeon.java.io.Version;
+import pro250.mobiledungeon.java.util.Percentage;
+import pro250.mobiledungeon.java.util.Selectable;
+import pro250.mobiledungeon.java.world.LuminosityVisibilityCriterion;
+import pro250.mobiledungeon.java.world.VisibilityCriteria;
 
 import java.io.Serializable;
 

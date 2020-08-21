@@ -9,30 +9,31 @@ import org.jetbrains.annotations.NotNull;
  */
 public class ColoredString {
 
-  private final String string;
-  private final Color color;
+    private final String string;
+    private final Color color;
 
-  public ColoredString(@NotNull String string, @NotNull Color color) {
-    this.string = string;
-    this.color = color;
-  }
+    public ColoredString(@NotNull String string, @NotNull Color color) {
+        this.string = string;
+        this.color = color;
+    }
 
-  @NotNull
-  public String getString() {
-    return string;
-  }
+    @NotNull
+    public String getString() {
+        return string;
+    }
 
-  @NotNull
-  public Color getColor() {
-    return color;
-  }
+    @NotNull
+    public Color getColor() {
+        return color;
+    }
 
-  @Override
-  public String toString() {
-    return "ColoredString{" +
-        "string='" + string + '\'' +
-        ", color=" + color +
-        '}';
-  }
+    @NotNull
+    @Override
+    public String toString() {
+        return "ColoredString{" +
+                "string='" + string + '\'' +
+                ", color=" + color +
+                '}';
+    }
 
 }

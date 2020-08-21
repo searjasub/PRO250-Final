@@ -128,7 +128,7 @@ public final class Engine {
     // Imagine if a third factor (such as hunger) could kill one of the creatures.
     // I think it still makes sense to say that the survivor managed to kill the defeated, but that's just me.
     DungeonString dungeonString = new DungeonString();
-    dungeonString.setColor(Color.CYAN);
+    //dungeonString.setColor(Color.CYAN);
     dungeonString.append(survivor.getName().getSingular());
     dungeonString.append(" managed to kill ");
     dungeonString.append(defeated.getName().getSingular());

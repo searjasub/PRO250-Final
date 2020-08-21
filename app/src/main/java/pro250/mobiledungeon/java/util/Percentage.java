@@ -8,6 +8,8 @@ import org.jetbrains.annotations.NotNull;
 import java.io.Serializable;
 import java.util.Locale;
 
+import pro250.mobiledungeon.java.io.Version;
+
 /**
  * A class that represents a percentage value between 0.0% and 100.00%.
  */

@@ -1,8 +1,8 @@
 package pro250.mobiledungeon.java.entity;
 
-import org.mafagafogigante.dungeon.game.Id;
-import org.mafagafogigante.dungeon.io.JsonObjectFactory;
-import org.mafagafogigante.dungeon.io.Version;
+import pro250.mobiledungeon.java.game.Id;
+import pro250.mobiledungeon.java.io.JsonObjectFactory;
+import pro250.mobiledungeon.java.io.Version;
 
 import com.eclipsesource.json.JsonObject;
 import com.eclipsesource.json.JsonValue;

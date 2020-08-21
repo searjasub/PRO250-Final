@@ -1,11 +1,11 @@
 package pro250.mobiledungeon.java.entity.creatures;
 
-import org.mafagafogigante.dungeon.io.Split;
-import org.mafagafogigante.dungeon.io.Version;
-import org.mafagafogigante.dungeon.io.Writer;
-import org.mafagafogigante.dungeon.logging.DungeonLogger;
-import org.mafagafogigante.dungeon.spells.Spell;
-import org.mafagafogigante.dungeon.util.Matches;
+import pro250.mobiledungeon.java.io.Split;
+import pro250.mobiledungeon.java.io.Version;
+import pro250.mobiledungeon.java.io.Writer;
+import pro250.mobiledungeon.java.logging.DungeonLogger;
+import pro250.mobiledungeon.java.spells.Spell;
+import pro250.mobiledungeon.java.util.Matches;
 
 import java.io.Serializable;
 import java.util.ArrayList;

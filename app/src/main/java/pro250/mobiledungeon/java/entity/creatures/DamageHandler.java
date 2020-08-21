@@ -5,13 +5,13 @@ package pro250.mobiledungeon.java.entity.creatures;
  */
 class DamageHandler {
 
-  private DamageHandler() {
-  }
+    private DamageHandler() {
+    }
 
-  static void inflictDamage(Creature attacker, Creature defender, int damage) {
-    defender.getHealth().decrementBy(damage);
-    attacker.getBattleLog().incrementInflicted(damage);
-    defender.getBattleLog().incrementTaken(damage);
-  }
+    static void inflictDamage(Creature attacker, Creature defender, int damage) {
+        defender.getHealth().decrementBy(damage);
+        attacker.getBattleLog().incrementInflicted(damage);
+        defender.getBattleLog().incrementTaken(damage);
+    }
 
 }

@@ -1,17 +1,17 @@
 package pro250.mobiledungeon.java.entity.creatures;
 
-import org.mafagafogigante.dungeon.date.Date;
-import org.mafagafogigante.dungeon.entity.Entity;
-import org.mafagafogigante.dungeon.entity.LightSource;
-import org.mafagafogigante.dungeon.entity.Luminosity;
-import org.mafagafogigante.dungeon.entity.TagSet;
-import org.mafagafogigante.dungeon.entity.items.CreatureInventory;
-import org.mafagafogigante.dungeon.entity.items.Item;
-import org.mafagafogigante.dungeon.game.Location;
-import org.mafagafogigante.dungeon.io.Version;
-import org.mafagafogigante.dungeon.logging.DungeonLogger;
-import org.mafagafogigante.dungeon.stats.CauseOfDeath;
-import org.mafagafogigante.dungeon.util.Percentage;
+import pro250.mobiledungeon.java.date.Date;
+import pro250.mobiledungeon.java.entity.Entity;
+import pro250.mobiledungeon.java.entity.LightSource;
+import pro250.mobiledungeon.java.entity.Luminosity;
+import pro250.mobiledungeon.java.entity.TagSet;
+import pro250.mobiledungeon.java.entity.items.CreatureInventory;
+import pro250.mobiledungeon.java.entity.items.Item;
+import pro250.mobiledungeon.java.game.Location;
+import pro250.mobiledungeon.java.io.Version;
+import pro250.mobiledungeon.java.logging.DungeonLogger;
+import pro250.mobiledungeon.java.stats.CauseOfDeath;
+import pro250.mobiledungeon.java.util.Percentage;
 
 import org.jetbrains.annotations.NotNull;
 

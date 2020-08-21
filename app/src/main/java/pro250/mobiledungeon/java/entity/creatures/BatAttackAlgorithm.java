@@ -1,7 +1,7 @@
 package pro250.mobiledungeon.java.entity.creatures;
 
-import org.mafagafogigante.dungeon.util.DungeonMath;
-import org.mafagafogigante.dungeon.util.Percentage;
+import pro250.mobiledungeon.java.util.DungeonMath;
+import pro250.mobiledungeon.java.util.Percentage;
 
 import org.jetbrains.annotations.NotNull;
 

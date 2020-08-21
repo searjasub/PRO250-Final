@@ -1,22 +1,26 @@
 package pro250.mobiledungeon.java.entity;
 
-import org.mafagafogigante.dungeon.game.Id;
-import org.mafagafogigante.dungeon.game.Name;
-import org.mafagafogigante.dungeon.util.Percentage;
+import pro250.mobiledungeon.java.game.Id;
+import pro250.mobiledungeon.java.game.Name;
+import pro250.mobiledungeon.java.util.Percentage;
+
+import pro250.mobiledungeon.java.game.Id;
+import pro250.mobiledungeon.java.game.Name;
+import pro250.mobiledungeon.java.util.Percentage;
 
 /**
  * An interface that simplifies Entity instantiation.
  */
 public interface Preset {
 
-  Id getId();
+    Id getId();
 
-  String getType();
+    String getType();
 
-  Name getName();
+    Name getName();
 
-  Weight getWeight();
+    Weight getWeight();
 
-  Percentage getVisibility();
+    Percentage getVisibility();
 
 }

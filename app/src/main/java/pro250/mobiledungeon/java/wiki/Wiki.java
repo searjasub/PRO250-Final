@@ -1,9 +1,9 @@
 package pro250.mobiledungeon.java.wiki;
 
-import org.mafagafogigante.dungeon.io.DungeonResource;
-import org.mafagafogigante.dungeon.io.JsonObjectFactory;
-import org.mafagafogigante.dungeon.io.ResourceNameResolver;
-import org.mafagafogigante.dungeon.logging.DungeonLogger;
+import org.json.JSONObject;
+
+import pro250.mobiledungeon.java.io.*;
+import pro250.mobiledungeon.java.logging.DungeonLogger;
 
 import com.eclipsesource.json.JsonObject;
 import com.eclipsesource.json.JsonValue;
@@ -24,7 +24,6 @@ import java.util.Set;
 final class Wiki {
 
   private static List<Article> articleList;
-
   private Wiki() {
     throw new AssertionError();
   }

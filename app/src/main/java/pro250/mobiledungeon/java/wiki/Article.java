@@ -1,14 +1,13 @@
 package pro250.mobiledungeon.java.wiki;
-
-import org.mafagafogigante.dungeon.game.Name;
-import org.mafagafogigante.dungeon.game.NameFactory;
-import org.mafagafogigante.dungeon.util.Selectable;
-import org.mafagafogigante.dungeon.util.Utils;
+import pro250.mobiledungeon.java.game.*;
+import pro250.mobiledungeon.java.util.Utils;
 
 import org.jetbrains.annotations.NotNull;
 
 import java.util.Set;
 import java.util.TreeSet;
+
+import pro250.mobiledungeon.java.util.Selectable;
 
 /**
  * Article class that represents a wiki article.

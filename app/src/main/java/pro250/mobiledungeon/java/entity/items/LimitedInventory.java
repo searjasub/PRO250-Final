@@ -1,6 +1,6 @@
 package pro250.mobiledungeon.java.entity.items;
 
-import org.mafagafogigante.dungeon.entity.Weight;
+import pro250.mobiledungeon.java.entity.Weight;
 
 interface LimitedInventory {
 

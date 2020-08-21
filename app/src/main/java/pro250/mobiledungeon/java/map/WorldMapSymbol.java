@@ -5,7 +5,6 @@ import pro250.mobiledungeon.java.game.LocationDescription;
 
 import org.jetbrains.annotations.NotNull;
 
-import java.awt.Color;
 import java.util.Objects;
 
 /**
@@ -13,25 +12,22 @@ import java.util.Objects;
  */
 class WorldMapSymbol {
 
-  private static final WorldMapSymbol HERO_SYMBOL = new WorldMapSymbol("You", '@', Color.WHITE);
-  private static final WorldMapSymbol NOT_YET_GENERATED_SYMBOL = new WorldMapSymbol("Unknown", '~', Color.GRAY);
+  private static final WorldMapSymbol HERO_SYMBOL = new WorldMapSymbol("You", '@');
+  private static final WorldMapSymbol NOT_YET_GENERATED_SYMBOL = new WorldMapSymbol("Unknown", '~');
 
   private final String name;
   private final String character;
-  private final Color color;
 
-  private WorldMapSymbol(String name, char character, @NotNull Color color) {
+  private WorldMapSymbol(String name, char character) {
     this.name = name;
     this.character = String.valueOf(character);
-    this.color = color;
   }
 
   public static WorldMapSymbol makeSymbol(@NotNull Location location) {
     String singular = location.getName().getSingular();
     LocationDescription description = location.getDescription();
     final char symbol = description.getSymbol();
-    Color color = description.getColor();
-    return new WorldMapSymbol(singular, symbol, color);
+    return new WorldMapSymbol(singular, symbol);
   }
 
   public static WorldMapSymbol getHeroSymbol() {
@@ -50,10 +46,6 @@ class WorldMapSymbol {
     return character;
   }
 
-  public Color getColor() {
-    return color;
-  }
-
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -65,13 +57,12 @@ class WorldMapSymbol {
     WorldMapSymbol that = (WorldMapSymbol) o;
     final boolean nameEquals = Objects.equals(name, that.name);
     final boolean characterEquals = Objects.equals(character, that.character);
-    final boolean colorEquals = Objects.equals(color, that.color);
-    return nameEquals && characterEquals && colorEquals;
+    return nameEquals && characterEquals;
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(name, character, color);
+    return Objects.hash(name, character);
   }
 
   @Override
@@ -79,7 +70,6 @@ class WorldMapSymbol {
     return "WorldMapSymbol{" +
             "name='" + name + '\'' +
             ", character='" + character + '\'' +
-            ", color=" + color +
             '}';
   }
 

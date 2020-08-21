@@ -1,5 +1,7 @@
 package pro250.mobiledungeon.java.achievements;
 
+import android.graphics.Color;
+
 import pro250.mobiledungeon.java.achievements.comparators.UnlockedAchievementComparators;
 import pro250.mobiledungeon.java.date.Date;
 import pro250.mobiledungeon.java.date.Duration;
