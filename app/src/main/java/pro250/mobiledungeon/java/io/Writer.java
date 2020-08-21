@@ -3,6 +3,7 @@ package pro250.mobiledungeon.java.io;
 import pro250.mobiledungeon.java.game.DungeonString;
 import pro250.mobiledungeon.java.game.Writable;
 import pro250.mobiledungeon.java.game.Game;
+import pro250.mobiledungeon.java.util.Table;
 
 /**
  * Writer class that encapsulates all Input/Output operations. This is the only class that should call the writing
@@ -24,9 +25,19 @@ public final class Writer {
      *
      * @param text the string of text to be written.
      */
+    public static void write(DungeonString text) {
+//        DungeonString string = new DungeonString(text);
+        text.append("\n");
+    }
+
     public static void write(String text) {
         DungeonString string = new DungeonString(text);
         string.append("\n");
+    }
+
+    public static void write(Table text) {
+        DungeonString string = new DungeonString();
+        string.append(text + "\n");
     }
 
 }

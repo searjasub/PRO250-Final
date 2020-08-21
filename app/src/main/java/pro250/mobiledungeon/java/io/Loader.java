@@ -66,9 +66,10 @@ public final class Loader {
    * Prompts the user to confirm an operation using a dialog window.
    */
   private static boolean confirmOperation(String confirmation) {
-    int result = JOptionPane.showConfirmDialog(Game.getGameWindow(), confirmation, null, JOptionPane.YES_NO_OPTION);
-    Game.getGameWindow().requestFocusOnTextField();
-    return result == JOptionPane.YES_OPTION;
+//    int result = JOptionPane.showConfirmDialog(Game.getGameWindow(), confirmation, null, JOptionPane.YES_NO_OPTION);
+//    Game.getGameWindow().requestFocusOnTextField();
+//    return result == JOptionPane.YES_OPTION;
+    return true;
   }
 
   /**
@@ -91,7 +92,7 @@ public final class Loader {
     string.append(gameState.getPreface());
     string.append("\n");
     Writer.write(string);
-    Game.getGameWindow().requestFocusOnTextField();
+//    Game.getGameWindow().requestFocusOnTextField();
     return gameState;
   }
 
@@ -134,13 +135,13 @@ public final class Loader {
       if (isSaveFile(save)) {
         return loadFile(save);
       } else {
-        Writer.write(save.getName() + " does not exist or is not a file.");
+        Writer.write(new DungeonString(save.getName() + " does not exist or is not a file."));
         return null;
       }
     } else {
       GameState loadResult = loadGame(false); // Don't ask for confirmation. Typing load is not an easy mistake.
       if (loadResult == null) {
-        Writer.write("No saved game could be found.");
+        Writer.write(new DungeonString("No saved game could be found."));
       }
       return loadResult;
     }
@@ -221,13 +222,13 @@ public final class Loader {
       }
       String sizeString = Converter.bytesToHuman(file.length());
       DungeonLogger.info(String.format("Loaded %s in %s.", sizeString, stopWatch.toString()));
-      Writer.write(String.format("Successfully loaded the game (read %s from %s).", sizeString, file.getName()));
+      Writer.write(new DungeonString(String.format("Successfully loaded the game (read %s from %s).", sizeString, file.getName())));
       return loadedGameState;
     } catch (FileNotFoundException bad) { // The filed was moved or deleted.
-      Writer.write("Could not find the specified saved game.");
+      Writer.write(new DungeonString("Could not find the specified saved game."));
       return null;
     } catch (ClassNotFoundException | IOException exception) {
-      Writer.write("Could not load the saved game.");
+      Writer.write(new DungeonString("Could not load the saved game."));
       DungeonLogger.logSevere(exception);
       return null;
     }
@@ -255,9 +256,9 @@ public final class Loader {
         writer.append(System.lineSeparator());
       }
       DungeonLogger.info(String.format("Saved %s in %s.", sizeString, stopWatch.toString()));
-      Writer.write(String.format("Successfully saved the game (wrote %s to %s).", sizeString, saveFile.getName()));
+      Writer.write(new DungeonString(String.format("Successfully saved the game (wrote %s to %s).", sizeString, saveFile.getName())));
     } catch (IOException exception) {
-      Writer.write("Could not save the game.");
+      Writer.write(new DungeonString("Could not save the game."));
       DungeonLogger.logSevere(exception);
     }
   }

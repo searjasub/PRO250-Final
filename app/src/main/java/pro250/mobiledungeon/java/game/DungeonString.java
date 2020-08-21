@@ -10,8 +10,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import pro250.mobiledungeon.java.logging.DungeonLogger;
-
 /**
  * The preferred way to represent multicolored text in Dungeon.
  *
@@ -29,8 +27,24 @@ public final class DungeonString extends Writable {
     /**
      * Constructs an empty DungeonString.
      */
-    public DungeonString() {
-    }
+    public DungeonString() { }
+
+  /**
+   * Returns an unmodifiable list of ColoredStrings that are equivalent to the contents of this DungeonString.
+   *
+   * @return an unmodifiable list of ColoredStrings
+   */
+//  public List<ColoredString> toColoredStringList() {
+//    addBuilderContentToList();
+//    return Collections.unmodifiableList(coloredStringList);
+//  }
+
+  private void addBuilderContentToList() {
+      if (builder.length() != 0) {
+//      coloredStringList.add(new ColoredString(builder.toString(), currentColor));
+          builder.setLength(0);
+      }
+  }
 
     /**
      * Constructs a DungeonString that starts with the specified text.
@@ -42,9 +56,9 @@ public final class DungeonString extends Writable {
     /**
      * Constructs a DungeonString that starts with the specified text and color.
      */
-    public DungeonString(String text, Color color) {
-        append(text);
-    }
+//    public DungeonString(String text, Color color) {
+//        append(text);
+//    }
 
     /**
      * Returns the total length of the string.
@@ -55,6 +69,34 @@ public final class DungeonString extends Writable {
         return sum;
     }
 
+  /**
+   * Changes the current color of this DungeonString. This will only impact future calls to <code>append</code>.
+   *
+   * <p>Passing the current color of this DungeonString is a no-op.
+   *
+   * @param color a Color object
+   */
+//  public void setColor(@NotNull Color color) {
+//    if (currentColor != color) {
+//      addBuilderContentToList();
+//      currentColor = color;
+//    }
+//  }
+
+  /**
+   * Resets the color of this DungeonString to the default color.
+   */
+//  public void resetColor() {
+//    setColor(DEFAULT_COLOR);
+//  }
+
+  @Override
+  public String toString() {
+      return "DungeonString{" +
+//        "coloredStringList=" + toColoredStringList() +
+//        ", currentColor=" + currentColor +
+              '}';
+  }
     /**
      * Appends one or more strings to this DungeonString.
      *
@@ -71,9 +113,8 @@ public final class DungeonString extends Writable {
         }
     }
 
-
-  @Override
-  public List<ColoredString> toColoredStringList() {
-    return null;
-  }
+    @Override
+    public List<ColoredString> toColoredStringList() {
+        return null;
+    }
 }

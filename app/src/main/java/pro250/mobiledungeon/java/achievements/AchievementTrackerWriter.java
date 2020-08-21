@@ -61,13 +61,13 @@ public class AchievementTrackerWriter {
     DungeonString string = new DungeonString();
     for (UnlockedAchievement unlockedAchievement : unlockedAchievements) {
       Duration sinceUnlock = new Duration(unlockedAchievement.getDate(), now);
-      //string.setColor(Color.ORANGE);
+//      string.setColor(Color.ORANGE);
       string.append(String.format("%s (%s ago)%n", unlockedAchievement.getName(), sinceUnlock));
-      //string.setColor(Color.YELLOW);
+//      string.setColor(Color.YELLOW);
       string.append(String.format(" %s%n", unlockedAchievement.getInfo()));
     }
     int total = AchievementStoreFactory.getDefaultStore().getAchievements().size();
-    //string.setColor(Color.CYAN);
+//    string.setColor(Color.CYAN);
     string.append(String.format("Progress: %d/%d", tracker.getUnlockedCount(), total));
     Writer.write(string);
   }

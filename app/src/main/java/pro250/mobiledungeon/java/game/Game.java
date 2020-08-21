@@ -125,7 +125,7 @@ public class Game {
     DungeonLogger.logCommandRenderingReport(issuedCommand.toString(), "finished processInput", stopWatch);
     if (wasSuccessful) {
       if (getGameState().getHero().getHealth().isDead()) {
-        Writer.write("You died.");
+        Writer.write(new DungeonString("You died."));
         unsetGameState();
         setGameState(getAfterDeathGameState());
       } else {
