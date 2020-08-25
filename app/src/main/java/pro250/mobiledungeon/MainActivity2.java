@@ -3,6 +3,7 @@ package pro250.mobiledungeon;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
+import android.widget.EditText;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
@@ -52,5 +53,10 @@ public class MainActivity2 extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
+    }
+
+    public void OnSubmitButtonClicked(View view) {
+        EditText e = (EditText) findViewById(R.id.editTextTextPersonName);
+        String input = e.getText().toString();
     }
 }
