@@ -1,5 +1,6 @@
 package pro250.mobiledungeon;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
@@ -19,9 +20,11 @@ import androidx.appcompat.widget.Toolbar;
 
 import pro250.mobiledungeon.java.game.Game;
 import pro250.mobiledungeon.java.game.GameState;
+import pro250.mobiledungeon.java.io.FileReader;
 
 public class MainActivity2 extends AppCompatActivity {
 
+    Game game;
     private AppBarConfiguration mAppBarConfiguration;
     @Override
     protected void onCreate(Bundle savedInstanceState){
@@ -41,6 +44,8 @@ public class MainActivity2 extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+        game = new Game();
+        game.start();
     }
 
     @Override

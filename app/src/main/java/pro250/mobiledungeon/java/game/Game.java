@@ -22,15 +22,17 @@ public class Game {
 
   private static final InstanceInformation instanceInformation = new InstanceInformation();
 
+  public Game(){}
+
   private static GameState gameState;
   /**
    * The main method.
    */
-  public static void main(String[] args) {
+  public void start(){
     final StopWatch stopWatch = new StopWatch();
-    DungeonLogger.info("Started initializing Dungeon " + Version.getCurrentVersion() + ".");
+    //DungeonLogger.info("Started initializing Dungeon " + Version.getCurrentVersion() + ".");
 
-    DungeonLogger.info("Finished making the window. Took " + stopWatch.toString() + ".");
+    //DungeonLogger.info("Finished making the window. Took " + stopWatch.toString() + ".");
     setGameState(getInitialGameState());
     invokeOnEventDispatchThreadAndWait(new Runnable() {
       @Override

@@ -36,8 +36,10 @@
         android:id="@+id/submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:onClick="OnSubmitButtonClicked"
         android:text="Submit Command"
-        tools:layout_editor_absoluteX="131dp"
-        tools:layout_editor_absoluteY="639dp" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        tools:ignore="MissingConstraints,OnClick"
+        tools:layout_editor_absoluteX="131dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

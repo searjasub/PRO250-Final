@@ -3,7 +3,9 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.1"
-
+    configurations.all {
+        resolutionStrategy.force 'org.hamcrest:hamcrest-core:1.1'
+    }
     defaultConfig {
         applicationId "pro250.mobiledungeon"
         minSdkVersion 22
@@ -39,5 +41,9 @@ dependencies {
     implementation group: 'com.eclipsesource.minimal-json', name: 'minimal-json', version: '0.9.5'
     implementation group: 'org.apache.commons', name: 'commons-math3', version: '3.6.1'
     implementation group: 'joda-time', name: 'joda-time', version: '2.10.6'
+    implementation (group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'){
+        exclude group: 'org.hamcrest', module:'hamcrest-core'
+    }
 
 }
+

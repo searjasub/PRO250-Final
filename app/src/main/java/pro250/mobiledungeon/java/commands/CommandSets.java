@@ -324,7 +324,7 @@ final class CommandSets {
         commandSet.addCommand(new Command("version", "Displays the game version.") {
             @Override
             public void execute(@NotNull String[] arguments) {
-                Writer.write("Dungeon version " + Version.getCurrentVersion() + ".");
+                //Writer.write("Dungeon version " + Version.getCurrentVersion() + ".");
             }
         });
         return commandSet;
