@@ -8,13 +8,13 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="331dp"
-        android:layout_height="481dp"
-        android:layout_marginTop="60dp"
-        android:text="DISPLAY OF THE CONTENT WILL BE HERE"
+        android:layout_width="338dp"
+        android:layout_height="356dp"
+        android:layout_marginTop="36dp"
+        android:text="DISPLAY OF THE CONTENT WILL sorta BE HERE"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -27,17 +27,21 @@
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.202" />
+        app:layout_constraintVertical_bias="0.085" />
 
     <Button
         android:id="@+id/submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
         android:onClick="OnSubmitButtonClicked"
         android:text="Submit Command"
-        tools:layout_editor_absoluteX="131dp"
-        tools:layout_editor_absoluteY="639dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        app:layout_constraintVertical_bias="0.166"
+        tools:ignore="HardcodedText,OnClick" />
 </androidx.constraintlayout.widget.ConstraintLayout>

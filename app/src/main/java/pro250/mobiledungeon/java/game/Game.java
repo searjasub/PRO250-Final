@@ -118,23 +118,23 @@ public class Game {
    *
    * @param issuedCommand the last IssuedCommand.
    */
-  public static void renderTurn(IssuedCommand issuedCommand, StopWatch stopWatch) {
-    DungeonLogger.logCommandRenderingReport(issuedCommand.toString(), "started renderTurn", stopWatch);
-    // Clears the text pane.
-    DungeonLogger.logCommandRenderingReport(issuedCommand.toString(), "started processInput", stopWatch);
-    boolean wasSuccessful = processInput(issuedCommand);
-    DungeonLogger.logCommandRenderingReport(issuedCommand.toString(), "finished processInput", stopWatch);
-    if (wasSuccessful) {
-      if (getGameState().getHero().getHealth().isDead()) {
-        Writer.write(new DungeonString("You died."));
-        unsetGameState();
-        setGameState(getAfterDeathGameState());
-      } else {
-        Engine.endTurn();
-      }
-    }
-    DungeonLogger.logCommandRenderingReport(issuedCommand.toString(), "finished renderTurn", stopWatch);
-  }
+//  public static void renderTurn(IssuedCommand issuedCommand, StopWatch stopWatch) {
+//    DungeonLogger.logCommandRenderingReport(issuedCommand.toString(), "started renderTurn", stopWatch);
+//    // Clears the text pane.
+//    DungeonLogger.logCommandRenderingReport(issuedCommand.toString(), "started processInput", stopWatch);
+//    boolean wasSuccessful = processInput(issuedCommand);
+//    DungeonLogger.logCommandRenderingReport(issuedCommand.toString(), "finished processInput", stopWatch);
+//    if (wasSuccessful) {
+//      if (getGameState().getHero().getHealth().isDead()) {
+//        Writer.write(new DungeonString("You died."));
+//        unsetGameState();
+//        setGameState(getAfterDeathGameState());
+//      } else {
+//        Engine.endTurn();
+//      }
+//    }
+//    DungeonLogger.logCommandRenderingReport(issuedCommand.toString(), "finished renderTurn", stopWatch);
+//  }
 
   /**
    * Processes the player's input. Adds the IssuedCommand to the CommandHistory and to the CommandStatistics. Finally,
@@ -143,7 +143,7 @@ public class Game {
    * @param issuedCommand the last IssuedCommand.
    * @return a boolean indicating whether or not the command executed successfully
    */
-  private static boolean processInput(IssuedCommand issuedCommand) {
+  public boolean processInput(IssuedCommand issuedCommand) {
     IssuedCommandEvaluation evaluation = IssuedCommandProcessor.evaluateIssuedCommand(issuedCommand);
     if (evaluation.isValid()) {
       instanceInformation.incrementAcceptedCommandCount();
