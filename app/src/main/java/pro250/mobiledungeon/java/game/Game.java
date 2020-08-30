@@ -20,15 +20,16 @@ import java.util.List;
 
 public class Game {
 
+  public Game(){}
   private static final InstanceInformation instanceInformation = new InstanceInformation();
 
   private static GameState gameState;
   /**
    * The main method.
    */
-  public static void main(String[] args) {
+  public void start(){
     final StopWatch stopWatch = new StopWatch();
-    DungeonLogger.info("Started initializing Dungeon " + Version.getCurrentVersion() + ".");
+    //DungeonLogger.info("Started initializing Dungeon " + Version.getCurrentVersion() + ".");
 
     DungeonLogger.info("Finished making the window. Took " + stopWatch.toString() + ".");
     setGameState(getInitialGameState());

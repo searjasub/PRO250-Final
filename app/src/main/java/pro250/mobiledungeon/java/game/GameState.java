@@ -18,7 +18,7 @@ public class GameState implements Serializable {
   private final Statistics statistics = new Statistics();
   private Hero hero;
   private Point heroPosition;
-  private Version gameVersion = Version.getCurrentVersion();
+  private Version gameVersion;
 
   private transient boolean saved = false;
 
