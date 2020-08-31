@@ -7,13 +7,10 @@ import pro250.mobiledungeon.java.commands.IssuedCommand;
 import pro250.mobiledungeon.java.commands.IssuedCommandEvaluation;
 import pro250.mobiledungeon.java.commands.IssuedCommandProcessor;
 import pro250.mobiledungeon.java.io.Loader;
-import pro250.mobiledungeon.java.io.Version;
-import pro250.mobiledungeon.java.io.Writer;
 import pro250.mobiledungeon.java.logging.DungeonLogger;
 import pro250.mobiledungeon.java.util.StopWatch;
 import pro250.mobiledungeon.java.util.Utils;
 
-import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -121,39 +118,37 @@ public class Game {
    *
    * @param issuedCommand the last IssuedCommand.
    */
-  public static void renderTurn(IssuedCommand issuedCommand, StopWatch stopWatch) {
-    DungeonLogger.logCommandRenderingReport(issuedCommand.toString(), "started renderTurn", stopWatch);
-    // Clears the text pane.
-    DungeonLogger.logCommandRenderingReport(issuedCommand.toString(), "started processInput", stopWatch);
-    boolean wasSuccessful = processInput(issuedCommand);
-    DungeonLogger.logCommandRenderingReport(issuedCommand.toString(), "finished processInput", stopWatch);
-    if (wasSuccessful) {
-      if (getGameState().getHero().getHealth().isDead()) {
-        Writer.write(new DungeonString("You died."));
-        unsetGameState();
-        setGameState(getAfterDeathGameState());
-      } else {
-        Engine.endTurn();
-      }
-    }
-    DungeonLogger.logCommandRenderingReport(issuedCommand.toString(), "finished renderTurn", stopWatch);
-  }
+//  public static void renderTurn(IssuedCommand issuedCommand, StopWatch stopWatch) {
+//    DungeonLogger.logCommandRenderingReport(issuedCommand.toString(), "started renderTurn", stopWatch);
+//    // Clears the text pane.
+//    DungeonLogger.logCommandRenderingReport(issuedCommand.toString(), "started processInput", stopWatch);
+//    boolean wasSuccessful = processInput(issuedCommand);
+//    DungeonLogger.logCommandRenderingReport(issuedCommand.toString(), "finished processInput", stopWatch);
+//    if (wasSuccessful) {
+//      if (getGameState().getHero().getHealth().isDead()) {
+//        Writer.write(new DungeonString("You died."));
+//        unsetGameState();
+//        setGameState(getAfterDeathGameState());
+//      } else {
+//        Engine.endTurn();
+//      }
+//    }
+//    DungeonLogger.logCommandRenderingReport(issuedCommand.toString(), "finished renderTurn", stopWatch);
+//  }
 
   /**
    * Processes the player's input. Adds the IssuedCommand to the CommandHistory and to the CommandStatistics. Finally,
    * this method finds and executes the corresponding Command object or prints a message if there is not such Command.
    *
    * @param issuedCommand the last IssuedCommand.
-   * @return a boolean indicating whether or not the command executed successfully
    */
-  private static boolean processInput(IssuedCommand issuedCommand) {
+  public void processInput(IssuedCommand issuedCommand) {
     IssuedCommandEvaluation evaluation = IssuedCommandProcessor.evaluateIssuedCommand(issuedCommand);
     if (evaluation.isValid()) {
       instanceInformation.incrementAcceptedCommandCount();
       getGameState().getCommandHistory().addCommand(issuedCommand);
       getGameState().getStatistics().addCommand(issuedCommand);
       IssuedCommandProcessor.prepareIssuedCommand(issuedCommand).execute();
-      return true;
     } else {
       DungeonString string = new DungeonString();
       string.append("That is not a valid command.\n");
@@ -165,7 +160,6 @@ public class Game {
       string.append(Utils.enumerate(suggestionsBetweenCommas));
       string.append(".\n");
       string.append("See 'commands' for a complete list of commands.");
-      return false;
     }
   }
 

@@ -25,6 +25,7 @@ import org.jetbrains.annotations.NotNull;
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 import pro250.mobiledungeon.java.io.Version;
 
@@ -123,7 +124,7 @@ public class World implements Serializable {
     if (!locations.containsKey(point)) {
       generator.expand(point);
     }
-    return locations.get(point);
+    return Objects.requireNonNull(locations.get(point));
   }
 
   /**

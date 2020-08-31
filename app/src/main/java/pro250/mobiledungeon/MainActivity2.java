@@ -16,10 +16,11 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import pro250.mobiledungeon.java.commands.IssuedCommand;
 import pro250.mobiledungeon.java.game.Game;
 
 public class MainActivity2 extends AppCompatActivity {
-
+    Game g;
     private AppBarConfiguration mAppBarConfiguration;
     public Game g;
     @Override
@@ -59,9 +60,12 @@ public class MainActivity2 extends AppCompatActivity {
                 || super.onSupportNavigateUp();
     }
 
+
     public void OnSubmitButtonClicked(View view) {
         EditText e = (EditText) findViewById(R.id.editTextTextPersonName);
         String input = e.getText().toString();
+        IssuedCommand ic = new IssuedCommand(input);
+        g.processInput(ic);
     }
 
     public void AddToLog(String s) {
