@@ -433,7 +433,7 @@ public class Hero extends Creature {
       text.append(String.format(" %s (%s)", item.getQualifiedName(), item.getWeight()));
       text.append("\n");
     }
-//    Writer.write(text);
+    Writer.write(text);
   }
 
   /**
@@ -602,7 +602,7 @@ public class Hero extends Creature {
       text.append(String.valueOf(selectedItem.getWeaponComponent().getHitRate()));
       text.append(".");
       text.append("\n");
-//      Writer.write(text);
+      Writer.write(text);
     }
   }
 
@@ -624,7 +624,7 @@ public class Hero extends Creature {
         if (getInventory().hasItem(selectedItem)) { // Just in case if a readable item eventually decomposes.
           DungeonString string = new DungeonString(book.getText());
           string.append("\n\n");
-//          Writer.write(string);
+          Writer.write(string);
           if (book.isDidactic()) {
             learnSpell(book);
           }
@@ -700,7 +700,7 @@ public class Hero extends Creature {
       DungeonString string = new DungeonString();
       string.append(getName() + " equipped " + weapon.getQualifiedName() + ".");
       string.append(" " + "Your total damage is now " + getTotalDamage() + ".");
-//      Writer.write(string);
+      Writer.write(string);
     } else {
       HeroUtils.writeNoLongerInInventoryMessage(weapon);
     }
@@ -752,7 +752,7 @@ public class Hero extends Creature {
     } else {
       string.append("You are fighting bare-handed.\n");
     }
-//    Writer.write(string);
+    Writer.write(string);
   }
 
   private int getTotalDamage() {
@@ -763,7 +763,7 @@ public class Hero extends Creature {
    * Prints the Hero's age.
    */
   public void printAge() {
-//    Writer.write(new DungeonString("You are " + getAgeString() + " old."));
+    Writer.write(new DungeonString("You are " + getAgeString() + " old."));
   }
 
   private String getAgeString() {
@@ -863,7 +863,7 @@ public class Hero extends Creature {
       string.append(Utils.enumerate(getSpellcaster().getSpellList()));
       string.append(".");
     }
-//    Writer.write(string);
+    Writer.write(string);
   }
 
   /**
@@ -887,7 +887,7 @@ public class Hero extends Creature {
         string.append("\n");
       }
     }
-//    Writer.write(string);
+    Writer.write(string);
   }
 
 }
