@@ -51,6 +51,15 @@
     },{
       "name": "kill",
       "content" : "Attacks the target chosen by the player."
+    },{
+      "name": "spells",
+      "content" : "Lists all the spells known by the character."
+    },{
+      "name": "go",
+      "content" : "Makes the character move in the specified direction."
+    },{
+      "name": "age",
+      "content" : "Displays the character's age."
     }
   ]
 }
