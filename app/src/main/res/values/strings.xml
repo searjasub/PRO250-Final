@@ -16,5 +16,6 @@
     <string name="mobile_dungeon">MOBILE DUNGEON</string>
     <string name="achievements">Achievements</string>
     <string name="locations">Locations</string>
+    <string name="commands">Commands</string>
 
 </resources>

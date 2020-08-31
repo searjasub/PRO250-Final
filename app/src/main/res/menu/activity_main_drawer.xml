@@ -24,5 +24,9 @@
             android:id="@+id/nav_location"
             android:icon="@drawable/ic_menu_camera"
             android:title="@string/locations" />
+        <item
+            android:id="@+id/nav_commands"
+            android:icon="@drawable/ic_command"
+            android:title="@string/commands" />
     </group>
 </menu>

@@ -1,0 +1,56 @@
+{
+  "commands": [
+    {
+      "name": "status",
+      "content" : "Displays the character's status."
+    },{
+      "name": "time",
+      "content" : "Displays what the character knows about the current time."
+    },{
+      "name": "pick",
+      "content" : "Attempts to pick up items from the current location."
+    },{
+      "name": "milk ",
+      "content" : "Attempts to milk a creature."
+    },{
+      "name": "save",
+      "content" : "Saves the game."
+    },{
+      "name": "saves",
+      "content" : "Displays a table with all the save files."
+    },{
+      "name": "drop",
+      "content" : "Drops the specified items."
+    },{
+      "name": "cast",
+      "content" : "Casts a spell."
+    },{
+      "name": "achievements",
+      "content" : "Displays the already unlocked achievements."
+    },{
+      "name": "destroy",
+      "content" : "Destroys items on the ground."
+    },{
+      "name": "drink",
+      "content" : "Drinks an item."
+    },{
+      "name": "eat",
+      "content" : "Eats an item."
+    },{
+      "name": "read",
+      "content" : "Reads the specified item."
+    },{
+      "name": "rest",
+      "content" : "Rests until healing about three fifths of the character's health."
+    },{
+      "name": "destroy",
+      "content" : "Destroys items on the ground."
+    },{
+      "name": "sleep",
+      "content" : "Sleeps until the sun rises."
+    },{
+      "name": "kill",
+      "content" : "Attacks the target chosen by the player."
+    }
+  ]
+}
