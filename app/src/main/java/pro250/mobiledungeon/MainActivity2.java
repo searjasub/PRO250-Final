@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import com.google.android.material.navigation.NavigationView;
 
+import androidx.annotation.NonNull;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -24,13 +25,22 @@ import pro250.mobiledungeon.java.game.Game;
 public class MainActivity2 extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
-    public Game g;
+    public Game game;
     public DungeonString startState;
     private int counter = 0;
+
     @Override
-    protected void onCreate(Bundle savedInstanceState){
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
+
+        if (savedInstanceState != null) {
+            //probably orientation change
+            startState = (DungeonString) savedInstanceState.getSerializable("text");
+            game = (Game) savedInstanceState.getSerializable("game");
+        }
+
+
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -39,15 +49,15 @@ public class MainActivity2 extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow)
+                R.id.nav_home, R.id.nav_items, R.id.nav_tutorial, R.id.nav_achievements, R.id.nav_location)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
-        g = new Game();
-        g.ma2 = this;
-        g.start();
+        game = new Game();
+        game.ma2 = this;
+        game.start();
     }
 
     @Override
@@ -65,16 +75,27 @@ public class MainActivity2 extends AppCompatActivity {
     }
 
     public void OnSubmitButtonClicked(View view) {
-        EditText e = (EditText) findViewById(R.id.editTextTextPersonName);
+        EditText e = findViewById(R.id.editTextTextPersonName);
         String input = e.getText().toString();
         e.setText("");
-        IssuedCommand ic = new IssuedCommand(input);
-        g.processInput(ic);
+        if (!input.isEmpty()) {
+            IssuedCommand ic = new IssuedCommand(input);
+            game.processInput(ic);
+        }
     }
+
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putSerializable("text", startState);
+        outState.putSerializable("game", game);
+    }
+
+
 
     public void AddToLog(String s) {
         TextView log = (TextView) findViewById(R.id.dungeonLog);
-        if(counter == 0) {
+        if (counter == 0) {
             log.setText("");
             log.setMovementMethod(new ScrollingMovementMethod());
             log.append(startState.builder.toString());

@@ -1,16 +1,16 @@
-package pro250.mobiledungeon.ui.slideshow;
+package pro250.mobiledungeon.ui.tutorials;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class SlideshowViewModel extends ViewModel {
+public class TutorialViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public SlideshowViewModel() {
+    public TutorialViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is slideshow fragment");
+        mText.setValue("TUTORIAL");
     }
 
     public LiveData<String> getText() {

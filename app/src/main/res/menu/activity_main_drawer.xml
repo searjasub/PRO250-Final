@@ -5,20 +5,24 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/location"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Locations" />
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/menu_home" />
         <item
-            android:id="@+id/items"
+            android:id="@+id/nav_items"
             android:icon="@drawable/ic_items"
-            android:title="Items" />
+            android:title="@string/menu_items" />
         <item
-            android:id="@+id/tutorial"
+            android:id="@+id/nav_tutorial"
             android:icon="@drawable/ic_baseline_help_24"
-            android:title="Tutorial" />
+            android:title="@string/menu_tutorial" />
         <item
-            android:id="@+id/achievements"
+            android:id="@+id/nav_achievements"
             android:icon="@drawable/ic_achievements"
-            android:title="Achievements" />
+            android:title="@string/achievements" />
+        <item
+            android:id="@+id/nav_location"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/locations" />
     </group>
 </menu>

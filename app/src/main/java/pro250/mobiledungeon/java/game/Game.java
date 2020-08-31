@@ -11,13 +11,14 @@ import pro250.mobiledungeon.java.logging.DungeonLogger;
 import pro250.mobiledungeon.java.util.StopWatch;
 import pro250.mobiledungeon.java.util.Utils;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 
 
 
-public class Game {
+public class Game implements Serializable {
 
   public Game(){}
   private static final InstanceInformation instanceInformation = new InstanceInformation();

@@ -9,12 +9,11 @@
     <TextView
         android:id="@+id/dungeonLog"
         android:layout_width="331dp"
-        android:layout_height="451dp"
-        android:layout_marginTop="60dp"
+        android:layout_height="481dp"
+        android:layout_marginTop="48dp"
         android:text="Type items to start"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="HardcodedText" />
@@ -23,28 +22,28 @@
         android:id="@+id/editTextTextPersonName"
         android:layout_width="327dp"
         android:layout_height="57dp"
+        android:layout_marginTop="40dp"
         android:autofillHints="Command"
         android:ems="10"
         android:hint="Command"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:imeOptions="actionGo"
         app:layout_constraintEnd_toEndOf="parent"
-
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dungeonLog"
-        app:layout_constraintVertical_bias="0.085"
         tools:ignore="HardcodedText" />
-
 
     <Button
         android:id="@+id/submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
         android:onClick="OnSubmitButtonClicked"
         android:text="Submit Command"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dungeonLog"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        app:layout_constraintVertical_bias="0.155"
         tools:ignore="HardcodedText,OnClick" />
 </androidx.constraintlayout.widget.ConstraintLayout>
