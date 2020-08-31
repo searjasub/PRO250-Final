@@ -6,14 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment">
 
+
     <TextView
         android:id="@+id/dungeonLog"
         android:layout_width="331dp"
         android:layout_height="481dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="52dp"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="HardcodedText" />
@@ -22,18 +22,16 @@
         android:id="@+id/editTextTextPersonName"
         android:layout_width="327dp"
         android:layout_height="57dp"
+        android:layout_marginTop="48dp"
+        android:autofillHints="Command"
         android:ems="10"
         android:hint="Command"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
         app:layout_constraintStart_toStartOf="parent"
-
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.085"
-        tools:ignore="HardcodedText"
-        android:autofillHints="Command" />
-
+        app:layout_constraintTop_toBottomOf="@+id/dungeonLog"
+        tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/submit"

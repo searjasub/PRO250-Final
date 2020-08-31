@@ -12,14 +12,24 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="pro250.mobiledungeon.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_items"
+        android:name="pro250.mobiledungeon.ui.items.ItemFragment"
+        android:label="@string/menu_items"
+        tools:layout="@layout/fragment_item" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="pro250.mobiledungeon.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_tutorial"
+        android:name="pro250.mobiledungeon.ui.tutorials.TutorialFragment"
+        android:label="@string/menu_tutorial"
+        tools:layout="@layout/fragment_tutorial" />
+    <fragment
+        android:id="@+id/nav_achievements"
+        android:name="pro250.mobiledungeon.ui.achievements.AchievementFragment"
+        android:label="@string/achievements"
+        tools:layout="@layout/fragment_achievement" />
+    <fragment
+        android:id="@+id/nav_location"
+        android:name="pro250.mobiledungeon.ui.location.LocationFragment"
+        android:label="@string/locations"
+        tools:layout="@layout/fragment_location" />
 </navigation>

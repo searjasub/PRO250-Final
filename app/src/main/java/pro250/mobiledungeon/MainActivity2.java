@@ -23,6 +23,8 @@ public class MainActivity2 extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
     public Game g;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -35,7 +37,7 @@ public class MainActivity2 extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow)
+                R.id.nav_home, R.id.nav_items, R.id.nav_tutorial, R.id.nav_achievements, R.id.nav_location)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
@@ -71,5 +73,9 @@ public class MainActivity2 extends AppCompatActivity {
     public void AddToLog(String s) {
         TextView log = (TextView) findViewById(R.id.dungeonLog);
 //        log.append(s);
+    }
+
+    public void OnCardViewClicked(View view) {
+
     }
 }

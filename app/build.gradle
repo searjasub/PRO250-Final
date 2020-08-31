@@ -37,6 +37,7 @@ dependencies {
     implementation 'androidx.navigation:navigation-ui:2.1.0'
     implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0'
     implementation 'org.jetbrains:annotations-java5:15.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
@@ -44,5 +45,8 @@ dependencies {
     implementation group: 'com.eclipsesource.minimal-json', name: 'minimal-json', version: '0.9.5'
     implementation group: 'org.apache.commons', name: 'commons-math3', version: '3.6.1'
     implementation group: 'joda-time', name: 'joda-time', version: '2.10.6'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:cardview-v7:24.1.1'
 
 }
