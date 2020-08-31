@@ -9,7 +9,7 @@
     <TextView
         android:id="@+id/dungeonLog"
         android:layout_width="331dp"
-        android:layout_height="481dp"
+        android:layout_height="451dp"
         android:layout_marginTop="60dp"
         android:text="Type items to start"
         android:textAlignment="center"
