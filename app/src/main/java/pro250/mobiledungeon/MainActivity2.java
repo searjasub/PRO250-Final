@@ -29,7 +29,7 @@ public class MainActivity2 extends AppCompatActivity {
     private int counter = 0;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState){
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
         Toolbar toolbar = findViewById(R.id.toolbar);
@@ -69,13 +69,15 @@ public class MainActivity2 extends AppCompatActivity {
         EditText e = (EditText) findViewById(R.id.editTextTextPersonName);
         String input = e.getText().toString();
         e.setText("");
-        IssuedCommand ic = new IssuedCommand(input);
-        g.processInput(ic);
+        if (!input.isEmpty()) {
+            IssuedCommand ic = new IssuedCommand(input);
+            g.processInput(ic);
+        }
     }
 
     public void AddToLog(String s) {
         TextView log = (TextView) findViewById(R.id.dungeonLog);
-        if(counter == 0) {
+        if (counter == 0) {
             log.setText("");
             log.setMovementMethod(new ScrollingMovementMethod());
             log.append(startState.builder.toString());
