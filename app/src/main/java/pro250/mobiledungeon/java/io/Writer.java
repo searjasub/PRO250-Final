@@ -16,6 +16,7 @@ public final class Writer {
      * For how many milliseconds the game sleeps after writing a string of battle output.
      */
     private static final int DEFAULT_WAIT_INTERVAL = 300;
+    public static int counter;
 
     private Writer() { // Ensure that this class cannot be instantiated.
         throw new AssertionError();
@@ -50,7 +51,12 @@ public final class Writer {
      * @param string a Writable object, not empty
      */
     public static void writeToLog(DungeonString string) {
-        Game.ma2.AddToLog(string.toString());
+        if(counter >= 2) {
+            Game.ma2.AddToLog(string.builder.toString());
+        } else if(counter == 1) {
+            Game.ma2.startState = string;
+        }
+        counter++;
     }
 
     /**
