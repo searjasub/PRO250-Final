@@ -20,7 +20,7 @@ import pro250.mobiledungeon.java.commands.IssuedCommand;
 import pro250.mobiledungeon.java.game.Game;
 
 public class MainActivity2 extends AppCompatActivity {
-    Game g;
+
     private AppBarConfiguration mAppBarConfiguration;
     public Game g;
     @Override
