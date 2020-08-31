@@ -50,7 +50,7 @@ public final class Writer {
      * @param string a Writable object, not empty
      */
     public static void writeToLog(DungeonString string) {
-//        Game.ma2AddToLog(string.toString());
+        Game.ma2.AddToLog(string.toString());
     }
 
     /**

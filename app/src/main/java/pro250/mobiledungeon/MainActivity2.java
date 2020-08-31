@@ -69,7 +69,7 @@ public class MainActivity2 extends AppCompatActivity {
     }
 
     public void AddToLog(String s) {
-        TextView log = (TextView) this.findViewById(R.id.dungeonLog);
+        TextView log = (TextView) findViewById(R.id.dungeonLog);
 //        log.append(s);
     }
 }
