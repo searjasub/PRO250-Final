@@ -5,13 +5,10 @@ import pro250.mobiledungeon.java.commands.IssuedCommand;
 import pro250.mobiledungeon.java.commands.IssuedCommandEvaluation;
 import pro250.mobiledungeon.java.commands.IssuedCommandProcessor;
 import pro250.mobiledungeon.java.io.Loader;
-import pro250.mobiledungeon.java.io.Version;
-import pro250.mobiledungeon.java.io.Writer;
 import pro250.mobiledungeon.java.logging.DungeonLogger;
 import pro250.mobiledungeon.java.util.StopWatch;
 import pro250.mobiledungeon.java.util.Utils;
 
-import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -141,16 +138,14 @@ public class Game {
    * this method finds and executes the corresponding Command object or prints a message if there is not such Command.
    *
    * @param issuedCommand the last IssuedCommand.
-   * @return a boolean indicating whether or not the command executed successfully
    */
-  public boolean processInput(IssuedCommand issuedCommand) {
+  public void processInput(IssuedCommand issuedCommand) {
     IssuedCommandEvaluation evaluation = IssuedCommandProcessor.evaluateIssuedCommand(issuedCommand);
     if (evaluation.isValid()) {
       instanceInformation.incrementAcceptedCommandCount();
       getGameState().getCommandHistory().addCommand(issuedCommand);
       getGameState().getStatistics().addCommand(issuedCommand);
       IssuedCommandProcessor.prepareIssuedCommand(issuedCommand).execute();
-      return true;
     } else {
       DungeonString string = new DungeonString();
       string.append("That is not a valid command.\n");
@@ -162,7 +157,6 @@ public class Game {
       string.append(Utils.enumerate(suggestionsBetweenCommas));
       string.append(".\n");
       string.append("See 'commands' for a complete list of commands.");
-      return false;
     }
   }
 
