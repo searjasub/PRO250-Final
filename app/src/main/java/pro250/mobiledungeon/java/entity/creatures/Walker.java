@@ -35,7 +35,7 @@ class Walker implements Serializable {
       }
       Writer.write("Invalid input.");
     } else {
-//      Writer.write(new DungeonString("To where?"));
+      Writer.write(new DungeonString("To where?"));
     }
   }
 
