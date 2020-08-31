@@ -7,11 +7,10 @@
     tools:context=".ui.home.HomeFragment">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/dungeonLog"
         android:layout_width="331dp"
         android:layout_height="481dp"
         android:layout_marginTop="60dp"
-        android:text="DISPLAY OF THE CONTENT WILL BE HERE"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.475"
@@ -29,7 +28,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/dungeonLog"
         app:layout_constraintVertical_bias="0.202" />
 
     <Button

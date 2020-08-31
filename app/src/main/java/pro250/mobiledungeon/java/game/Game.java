@@ -1,6 +1,8 @@
 package pro250.mobiledungeon.java.game;
 
 import org.apache.commons.lang3.StringUtils;
+
+import pro250.mobiledungeon.MainActivity2;
 import pro250.mobiledungeon.java.commands.IssuedCommand;
 import pro250.mobiledungeon.java.commands.IssuedCommandEvaluation;
 import pro250.mobiledungeon.java.commands.IssuedCommandProcessor;
@@ -23,6 +25,7 @@ public class Game {
   public Game(){}
   private static final InstanceInformation instanceInformation = new InstanceInformation();
 
+  public static MainActivity2 ma2;
   private static GameState gameState;
   /**
    * The main method.

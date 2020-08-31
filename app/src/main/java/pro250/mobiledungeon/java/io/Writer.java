@@ -1,5 +1,6 @@
 package pro250.mobiledungeon.java.io;
 
+import pro250.mobiledungeon.MainActivity2;
 import pro250.mobiledungeon.java.game.DungeonString;
 import pro250.mobiledungeon.java.game.Writable;
 import pro250.mobiledungeon.java.game.Game;
@@ -28,16 +29,50 @@ public final class Writer {
     public static void write(DungeonString text) {
 //        DungeonString string = new DungeonString(text);
         text.append("\n");
+        writeToLog(text);
     }
 
     public static void write(String text) {
         DungeonString string = new DungeonString(text);
         string.append("\n");
+        writeToLog(string);
     }
 
     public static void write(Table text) {
         DungeonString string = new DungeonString();
         string.append(text + "\n");
+        writeToLog(string);
     }
+
+    /**
+     * The preferred way to write text to the text pane of the window.
+     *
+     * @param string a Writable object, not empty
+     */
+    public static void writeToLog(DungeonString string) {
+        Game.ma2AddToLog(string.toString());
+    }
+
+    /**
+     * The preferred way to write text to the text pane of the window.
+     *
+     * @param writable a Writable object, not empty
+     * @param specifications a WritingSpecifications object
+     */
+//    public static void write(Writable writable) {
+//        if (Game.getGameWindow() != null) { // There will be no window when running the tests, so check to prevent a NPE.
+//            Game.getGameWindow().scheduleWriteToTextPane(writable, specifications);
+//            if (specifications.shouldWait()) {
+//                Sleeper.sleep(specifications.getWait());
+//            }
+//        }
+//    }
+
+    /**
+     * Writes a Writable and waits for the default waiting interval.
+     */
+//    public static void writeAndWait(Writable writable) {
+//        write(writable, new WritingSpecifications(true, DEFAULT_WAIT_INTERVAL));
+//    }
 
 }
