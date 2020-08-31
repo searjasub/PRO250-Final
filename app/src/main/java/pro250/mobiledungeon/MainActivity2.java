@@ -4,9 +4,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
 import android.widget.EditText;
+import android.widget.TextView;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
 import androidx.navigation.NavController;
@@ -19,11 +18,11 @@ import androidx.appcompat.widget.Toolbar;
 
 import pro250.mobiledungeon.java.commands.IssuedCommand;
 import pro250.mobiledungeon.java.game.Game;
-import pro250.mobiledungeon.java.game.GameState;
 
 public class MainActivity2 extends AppCompatActivity {
-    Game g;
+
     private AppBarConfiguration mAppBarConfiguration;
+    public Game g;
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -43,6 +42,7 @@ public class MainActivity2 extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
         g = new Game();
+        g.ma2 = this;
         g.start();
     }
 
@@ -66,5 +66,10 @@ public class MainActivity2 extends AppCompatActivity {
         String input = e.getText().toString();
         IssuedCommand ic = new IssuedCommand(input);
         g.processInput(ic);
+    }
+
+    public void AddToLog(String s) {
+        TextView log = (TextView) this.findViewById(R.id.dungeonLog);
+//        log.append(s);
     }
 }

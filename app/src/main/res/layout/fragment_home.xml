@@ -7,11 +7,10 @@
     tools:context=".ui.home.HomeFragment">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="338dp"
-        android:layout_height="356dp"
-        android:layout_marginTop="36dp"
-        android:text="DISPLAY OF THE CONTENT WILL sorta BE HERE"
+        android:id="@+id/dungeonLog"
+        android:layout_width="331dp"
+        android:layout_height="481dp"
+        android:layout_marginTop="60dp"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
@@ -29,10 +28,12 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:layout_constraintVertical_bias="0.085"
         tools:ignore="HardcodedText"
         android:autofillHints="Command" />
+
 
     <Button
         android:id="@+id/submit"
