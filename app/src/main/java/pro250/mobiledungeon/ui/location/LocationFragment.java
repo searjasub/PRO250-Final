@@ -57,7 +57,7 @@ public class LocationFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        setRetainInstance(true);
         if (getArguments() != null) {
             mColumnCount = getArguments().getInt(ARG_COLUMN_COUNT);
         }
@@ -89,7 +89,7 @@ public class LocationFragment extends Fragment {
                     JSONObject names = jo_inside.getJSONObject("name");
                     String singular = names.getString("singular");
                     item.setName(singular);
-                    item.setContent(jo_inside.getString("info") );
+                    item.setContent(jo_inside.getString("info"));
                     items.add(item);
                 }
 

@@ -44,6 +44,7 @@ public class AchievementFragment extends Fragment {
     public AchievementFragment() {
     }
 
+
     // TODO: Customize parameter initialization
     @SuppressWarnings("unused")
     public static AchievementFragment newInstance(int columnCount) {
@@ -57,7 +58,7 @@ public class AchievementFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        setRetainInstance(true);
         if (getArguments() != null) {
             mColumnCount = getArguments().getInt(ARG_COLUMN_COUNT);
         }

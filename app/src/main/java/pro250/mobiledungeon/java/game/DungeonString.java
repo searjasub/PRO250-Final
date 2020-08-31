@@ -6,6 +6,7 @@ import pro250.mobiledungeon.java.logging.DungeonLogger;
 
 import org.jetbrains.annotations.NotNull;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -15,7 +16,7 @@ import java.util.List;
  *
  * <p>By calling setColor and append multiple times it is possible to generate long, multicolored strings.
  */
-public final class DungeonString extends Writable {
+public final class DungeonString extends Writable implements Serializable {
 
     /**
      * A list of ColoredStrings. No string from this list is empty. Adjacent strings may have the same color.
