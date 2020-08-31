@@ -37,6 +37,7 @@ public class Observer implements Serializable {
 
     private static final long serialVersionUID = Version.MAJOR;
     private static final VisibilityCriteria ADJACENT_LOCATIONS_VISIBILITY;
+    private static boolean setupDone = false;
 
     static {
         LuminosityVisibilityCriterion luminosity = new LuminosityVisibilityCriterion(new Luminosity(new Percentage(0.4)));
@@ -120,7 +121,12 @@ public class Observer implements Serializable {
         lookLocations(string);
         lookCreatures(string);
         lookItems(string);
-//        Writer.write(string);
+        if(setupDone == false){
+            setupDone = true;
+        }
+        else{
+            Writer.write(string);
+        }
     }
 
     /**

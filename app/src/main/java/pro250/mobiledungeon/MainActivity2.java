@@ -96,7 +96,7 @@ public class MainActivity2 extends AppCompatActivity {
     public void AddToLog(String s) {
         TextView log = (TextView) findViewById(R.id.dungeonLog);
         if (counter == 0) {
-            log.setText("");
+            log.setText(" ");
             log.setMovementMethod(new ScrollingMovementMethod());
             log.append(startState.builder.toString());
             counter++;
