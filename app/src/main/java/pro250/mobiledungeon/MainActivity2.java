@@ -1,6 +1,7 @@
 package pro250.mobiledungeon;
 
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.view.Menu;
 import android.widget.EditText;
@@ -17,12 +18,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import pro250.mobiledungeon.java.commands.IssuedCommand;
+import pro250.mobiledungeon.java.game.DungeonString;
 import pro250.mobiledungeon.java.game.Game;
 
 public class MainActivity2 extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
     public Game g;
+    public DungeonString startState;
+    private int counter = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -60,16 +64,22 @@ public class MainActivity2 extends AppCompatActivity {
                 || super.onSupportNavigateUp();
     }
 
-
     public void OnSubmitButtonClicked(View view) {
         EditText e = (EditText) findViewById(R.id.editTextTextPersonName);
         String input = e.getText().toString();
+        e.setText("");
         IssuedCommand ic = new IssuedCommand(input);
         g.processInput(ic);
     }
 
     public void AddToLog(String s) {
         TextView log = (TextView) findViewById(R.id.dungeonLog);
-//        log.append(s);
+        if(counter == 0) {
+            log.setText("");
+            log.setMovementMethod(new ScrollingMovementMethod());
+            log.append(startState.builder.toString());
+            counter++;
+        }
+        log.append(s);
     }
 }

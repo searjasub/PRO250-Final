@@ -22,7 +22,7 @@ public final class DungeonString extends Writable {
      *
      * <p>Should only be accessed through the getter (except for addBuilderContentToList).
      */
-    private final StringBuilder builder = new StringBuilder();
+    public final StringBuilder builder = new StringBuilder();
 
     /**
      * Constructs an empty DungeonString.
